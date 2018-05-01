@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="GaoZong&#39;s Notes">
 <meta property="og:description" content="Hexo是高效的静态站点生成框架，基于 Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 标签插件 来快速的插入特定形式的内容。在这篇文章中，假定你已经成功安装了 Hexo，并使用 Hexo 提供的命令创建了一个站点。 初级搭建  安装  在安装前，您必须检查电脑中是否已安装下列应用程序：  ">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-01T15:26:13.000Z">
+<meta property="og:updated_time" content="2018-05-01T15:59:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建个性化blog">
 <meta name="twitter:description" content="Hexo是高效的静态站点生成框架，基于 Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 标签插件 来快速的插入特定形式的内容。在这篇文章中，假定你已经成功安装了 Hexo，并使用 Hexo 提供的命令创建了一个站点。 初级搭建  安装  在安装前，您必须检查电脑中是否已安装下列应用程序：  ">
@@ -390,7 +390,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  716
+                  1,113
                 </span>
               
 
@@ -534,7 +534,53 @@ hexo new &quot;Hello World&quot; --lang tw
 :day    建立的日期（2 位数）
 :i_day    建立的日期（去掉开头的零）
 </code></pre><hr>
-<h3 id="setting">个性化设置</h3>
+<h3 id="individual">个性化设置</h3>
+
+<h4 id="fork">实现fork me on github</h4>
+
+<p>点击<a href="https://blog.github.com/2008-12-19-github-ribbons/" target="_blank" rel="noopener">这里</a>或<a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">Here</a>，挑选喜欢的样式，复制其中的代码，例如：</p>
+<pre><code>&lt;a href=&quot;https://github.com/you&quot;&gt;
+&lt;img style=&quot;position: absolute; top: 0; left: 0; border: 0;&quot; src=&quot;https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png&quot; alt=&quot;Fork me on GitHub&quot;&gt;
+&lt;/a&gt;
+</code></pre><p>然后粘贴刚才复制的代码到<code>themes/next/layout/_layout.swig</code>文件中(放在<code>&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;</code>的下面)，并把<code>href</code>改为你的github地址。</p>
+<hr>
+<h4 id="rss">添加RSS</h4>
+
+<p>根目录下安装插件：</p>
+<pre><code>npm install --save hexo-generator-feed
+</code></pre><p>配置<code>主题配置文件</code>下的rss:</p>
+<pre><code>rss: /atom.xml #或者为空
+</code></pre><p>重新生成静态文件，将在<code>public</code>下生成<code>atom.xml</code></p>
+<pre><code>$ hexo g
+</code></pre><hr>
+<h4 id="background">添加动态线条背景</h4>
+
+<p id="step1">1、修改_layout.swig</p>
+
+<p>打开 <code>next/layout/_layout.swig</code>,在 <code>&lt; /body&gt;</code>之前添加代码(注意不要放在<code>&lt; /head&gt;</code>的后面)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.canvas_nest %&#125;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>2、修改配置文件<br>打开 <code>/next/_config.yml</code>,在里面添加如下代码：(可以放在最后面)</p>
+<pre><code># --------------------------------------------------------------
+# background settings
+# --------------------------------------------------------------
+# add canvas-nest effect
+# see detail from https://github.com/hustcc/canvas-nest.js
+canvas_nest: true
+</code></pre><p>3、重新生成文件</p>
+<pre><code>hexo clean
+hexo g
+hexo s
+</code></pre><p>4、配置线条属性</p>
+<p>替换<a href="#step1">第一步</a>中的代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.canvas_nest %&#125;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;</span><br><span class="line">color=&quot;0,0,255&quot; opacity=&apos;0.7&apos; zIndex=&quot;-2&quot; count=&quot;99&quot; src=&quot;//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>配置项说明</p>
+<ul>
+<li>color ：线条颜色, 默认: ‘0,0,0’；三个数字分别为(R,G,B)</li>
+<li>opacity: 线条透明度（0~1）, 默认: 0.5</li>
+<li>count: 线条的总数量, 默认: 150</li>
+<li>zIndex: 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1</li>
+</ul>
+
       
     </div>
     
@@ -745,7 +791,7 @@ hexo new &quot;Hello World&quot; --lang tw
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#overview"><span class="nav-number">1.</span> <span class="nav-text">初级搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#install"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#blog"><span class="nav-number">1.2.</span> <span class="nav-text">搭建博客</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#commond"><span class="nav-number">1.3.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setting"><span class="nav-number">2.</span> <span class="nav-text">个性化设置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#overview"><span class="nav-number">1.</span> <span class="nav-text">初级搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#install"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#blog"><span class="nav-number">1.2.</span> <span class="nav-text">搭建博客</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#commond"><span class="nav-number">1.3.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#individual"><span class="nav-number">2.</span> <span class="nav-text">个性化设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#fork"><span class="nav-number">2.1.</span> <span class="nav-text">实现fork me on github</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rss"><span class="nav-number">2.2.</span> <span class="nav-text">添加RSS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#background"><span class="nav-number">2.3.</span> <span class="nav-text">添加动态线条背景</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -786,7 +832,7 @@ hexo new &quot;Hello World&quot; --lang tw
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">7.0k</span>
+    <span title="Site words total count">7.4k</span>
   
 </div>
 
