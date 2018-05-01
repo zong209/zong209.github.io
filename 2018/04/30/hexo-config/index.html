@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="hexo个性化配置">
+<meta name="description" content="Hexo是高效的静态站点生成框架，基于 Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 标签插件 来快速的插入特定形式的内容。在这篇文章中，假定你已经成功安装了 Hexo，并使用 Hexo 提供的命令创建了一个站点。 初级搭建  安装  在安装前，您必须检查电脑中是否已安装下列应用程序：  ">
 <meta name="keywords" content="Hexo,Blog">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo个性化配置">
+<meta property="og:title" content="Hexo搭建个性化blog">
 <meta property="og:url" content="blog.gzong.top/2018/04/30/hexo-config/index.html">
 <meta property="og:site_name" content="GaoZong&#39;s Notes">
-<meta property="og:description" content="hexo个性化配置">
+<meta property="og:description" content="Hexo是高效的静态站点生成框架，基于 Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 标签插件 来快速的插入特定形式的内容。在这篇文章中，假定你已经成功安装了 Hexo，并使用 Hexo 提供的命令创建了一个站点。 初级搭建  安装  在安装前，您必须检查电脑中是否已安装下列应用程序：  ">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-01T08:36:05.000Z">
+<meta property="og:updated_time" content="2018-05-01T15:26:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo个性化配置">
-<meta name="twitter:description" content="hexo个性化配置">
+<meta name="twitter:title" content="Hexo搭建个性化blog">
+<meta name="twitter:description" content="Hexo是高效的静态站点生成框架，基于 Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 标签插件 来快速的插入特定形式的内容。在这篇文章中，假定你已经成功安装了 Hexo，并使用 Hexo 提供的命令创建了一个站点。 初级搭建  安装  在安装前，您必须检查电脑中是否已安装下列应用程序：  ">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>Hexo个性化配置 | GaoZong's Notes</title>
+  <title>Hexo搭建个性化blog | GaoZong's Notes</title>
   
 
 
@@ -326,7 +326,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo个性化配置</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo搭建个性化blog</h1>
         
 
         <div class="post-meta">
@@ -390,7 +390,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  6
+                  716
                 </span>
               
 
@@ -436,7 +436,105 @@
       
 
       
-        <h1 id="hexo个性化配置"><a href="#hexo个性化配置" class="headerlink" title="hexo个性化配置"></a>hexo个性化配置</h1>
+        <p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a>是高效的静态站点生成框架，基于 Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 标签插件 来快速的插入特定形式的内容。在这篇文章中，假定你已经成功安装了 Hexo，并使用 Hexo 提供的命令创建了一个站点。</p>
+<h3 id="overview">初级搭建</h3>
+
+<h4 id="install">安装</h4>
+
+<p>在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
+<ul>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
+</ul>
+<p>1、node.js安装</p>
+<p>ubuntu:</p>
+<pre><code>for Node.js 10:
+    curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+for Node.js 10:
+    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+</code></pre><p>mac:</p>
+<pre><code>brew install node
+</code></pre><p>2、git安装</p>
+<p>ubuntu:</p>
+<pre><code>sudo apt-get install git-core
+</code></pre><p>mac:</p>
+<pre><code>brew install git
+</code></pre><p>3、hexo安装</p>
+<p>使用 npm 即可完成 Hexo 的安装</p>
+<pre><code>npm install -g hexo-cli
+</code></pre><hr>
+<h4 id="blog">搭建博客</h4>
+
+<p>1、初始化</p>
+<pre><code>hexo init + 需要初始化的目录
+</code></pre><p>2、安装依赖</p>
+<p>进入初始化后的目录，并安装依赖</p>
+<pre><code>npm install
+</code></pre><p>3、生成页面文件</p>
+<pre><code>hexo generate # 简写 hexo g
+</code></pre><p>4、启动本地服务</p>
+<pre><code>hexo server # 简写 hexo s 调试加参数：--debug
+</code></pre><p>5、 测试</p>
+<pre><code>浏览器输入： http://localhost:4000
+</code></pre><p>6、安装主题</p>
+<p>安装<a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">Next</a>主题，访问更多<a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题</a></p>
+<pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre><p>根目录下<code>_config.yml</code>，修改theme值</p>
+<pre><code>theme: next # 刚刚安装的主题名称
+</code></pre><hr>
+<h4 id="commond">常用命令</h4>
+
+<p>Hexo 安装升级</p>
+<pre><code>npm install hexo -g #安装  
+npm update hexo -g #升级  
+hexo init #初始化
+</code></pre><p>常用简写</p>
+<pre><code>hexo n &quot;我的博客&quot; == hexo new &quot;我的博客&quot; #新建文章
+hexo p == hexo publish
+hexo g == hexo generate#生成
+hexo s == hexo server #启动服务预览
+hexo d == hexo deploy#部署
+</code></pre><p>启动本地服务</p>
+<pre><code>hexo server #Hexo #会监视文件变动并自动更新，您无须重启服务器。
+hexo server -s #静态模式
+hexo server -p 5000 #更改端口
+hexo server -i 192.168.1.1 #自定义 IP
+</code></pre><p>监视文件变动</p>
+<pre><code>hexo generate #使用 Hexo 生成静态文件快速而且简单
+hexo generate --watch #监视文件变动
+hexo clean #清除缓存 网页正常情况下可以忽略此条命令
+</code></pre><p>部署</p>
+<pre><code>#两个命令的作用是相同的
+hexo generate --deploy
+hexo deploy --generate
+hexo deploy -g
+hexo server -g
+</code></pre><p>草稿</p>
+<pre><code># 新建草稿
+hexo new draft &lt;title&gt;
+# 发布草稿为post
+hexo publish draft &lt;title&gt;
+</code></pre><p>模板</p>
+<pre><code>hexo new &quot;postName&quot; #新建文章
+hexo new page &quot;pageName&quot; #新建页面
+hexo generate #生成静态页面至public目录
+hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
+hexo deploy #将.deploy目录部署到GitHub
+hexo new [layout] &lt;title&gt;
+hexo new photo &quot;My Gallery&quot;
+hexo new &quot;Hello World&quot; --lang tw
+</code></pre><p>写作时间</p>
+<pre><code>变量    描述
+:title    标题
+:year    建立的年份（4 位数）
+:month    建立的月份（2 位数）
+:i_month    建立的月份（去掉开头的零）
+:day    建立的日期（2 位数）
+:i_day    建立的日期（去掉开头的零）
+</code></pre><hr>
+<h3 id="setting">个性化设置</h3>
       
     </div>
     
@@ -446,7 +544,7 @@
     
       <div class="copyright">
       <p><span>
-      <b>本文地址：</b><a href="/2018/04/30/hexo-config/" title="Hexo个性化配置">blog.gzong.top/2018/04/30/hexo-config/</a><br /><b>转载请注明出处，谢谢！</b>
+      <b>本文地址：</b><a href="/2018/04/30/hexo-config/" title="Hexo搭建个性化blog">blog.gzong.top/2018/04/30/hexo-config/</a><br /><b>转载请注明出处，谢谢！</b>
       </span></p>
       </div>
     
@@ -647,7 +745,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo个性化配置"><span class="nav-number">1.</span> <span class="nav-text">hexo个性化配置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#overview"><span class="nav-number">1.</span> <span class="nav-text">初级搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#install"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#blog"><span class="nav-number">1.2.</span> <span class="nav-text">搭建博客</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#commond"><span class="nav-number">1.3.</span> <span class="nav-text">常用命令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setting"><span class="nav-number">2.</span> <span class="nav-text">个性化设置</span></a></li></ol></div>
             
 
           </div>
@@ -688,7 +786,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">6.3k</span>
+    <span title="Site words total count">7.0k</span>
   
 </div>
 

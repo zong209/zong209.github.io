@@ -13,9 +13,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo个性化配置]]></title>
+    <title><![CDATA[Hexo搭建个性化blog]]></title>
     <url>%2F2018%2F04%2F30%2Fhexo-config%2F</url>
-    <content type="text"><![CDATA[hexo个性化配置]]></content>
+    <content type="text"><![CDATA[Hexo是高效的静态站点生成框架，基于 Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 标签插件 来快速的插入特定形式的内容。在这篇文章中，假定你已经成功安装了 Hexo，并使用 Hexo 提供的命令创建了一个站点。 初级搭建 安装 在安装前，您必须检查电脑中是否已安装下列应用程序： Node.js Git 1、node.js安装 ubuntu: for Node.js 10: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - sudo apt-get install -y nodejs for Node.js 10: curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - sudo apt-get install -y nodejs mac: brew install node 2、git安装 ubuntu: sudo apt-get install git-core mac: brew install git 3、hexo安装 使用 npm 即可完成 Hexo 的安装 npm install -g hexo-cli 搭建博客 1、初始化 hexo init + 需要初始化的目录 2、安装依赖 进入初始化后的目录，并安装依赖 npm install 3、生成页面文件 hexo generate # 简写 hexo g 4、启动本地服务 hexo server # 简写 hexo s 调试加参数：--debug 5、 测试 浏览器输入： http://localhost:4000 6、安装主题 安装Next主题，访问更多主题 git clone https://github.com/iissnan/hexo-theme-next themes/next 根目录下_config.yml，修改theme值 theme: next # 刚刚安装的主题名称 常用命令 Hexo 安装升级 npm install hexo -g #安装 npm update hexo -g #升级 hexo init #初始化 常用简写 hexo n &quot;我的博客&quot; == hexo new &quot;我的博客&quot; #新建文章 hexo p == hexo publish hexo g == hexo generate#生成 hexo s == hexo server #启动服务预览 hexo d == hexo deploy#部署 启动本地服务 hexo server #Hexo #会监视文件变动并自动更新，您无须重启服务器。 hexo server -s #静态模式 hexo server -p 5000 #更改端口 hexo server -i 192.168.1.1 #自定义 IP 监视文件变动 hexo generate #使用 Hexo 生成静态文件快速而且简单 hexo generate --watch #监视文件变动 hexo clean #清除缓存 网页正常情况下可以忽略此条命令 部署 #两个命令的作用是相同的 hexo generate --deploy hexo deploy --generate hexo deploy -g hexo server -g 草稿 # 新建草稿 hexo new draft &lt;title&gt; # 发布草稿为post hexo publish draft &lt;title&gt; 模板 hexo new &quot;postName&quot; #新建文章 hexo new page &quot;pageName&quot; #新建页面 hexo generate #生成静态页面至public目录 hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server） hexo deploy #将.deploy目录部署到GitHub hexo new [layout] &lt;title&gt; hexo new photo &quot;My Gallery&quot; hexo new &quot;Hello World&quot; --lang tw 写作时间 变量 描述 :title 标题 :year 建立的年份（4 位数） :month 建立的月份（2 位数） :i_month 建立的月份（去掉开头的零） :day 建立的日期（2 位数） :i_day 建立的日期（去掉开头的零） 个性化设置]]></content>
       <categories>
         <category>blog</category>
       </categories>

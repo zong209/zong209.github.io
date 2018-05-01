@@ -45,11 +45,11 @@
   </entry>
   
   <entry>
-    <title>Hexo个性化配置</title>
+    <title>Hexo搭建个性化blog</title>
     <link href="blog.gzong.top/2018/04/30/hexo-config/"/>
     <id>blog.gzong.top/2018/04/30/hexo-config/</id>
     <published>2018-04-30T14:04:07.000Z</published>
-    <updated>2018-05-01T08:36:05.000Z</updated>
+    <updated>2018-05-01T15:26:13.000Z</updated>
     
     <summary type="html">
     
@@ -57,7 +57,7 @@
       
         
         
-          &lt;h1 id=&quot;hexo个性化配置&quot;&gt;&lt;a href=&quot;#hexo个性化配置&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;是高效的静态站点生成框架，基于 Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了
         
       
     
