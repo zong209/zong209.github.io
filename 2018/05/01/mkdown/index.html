@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="GaoZong&#39;s Notes">
 <meta property="og:description" content="Markdown是一种轻量级标记语言，它用简洁的语法代替排版，使我们专心于码字。它的目标是实现易读易写，成为一种适用于网络的书写语言。同时，Markdown支持嵌入html标签。 Markdown特点  兼容 HTML  Markdown 的格式语法只涵盖纯文本可以涵盖的范围，不在 Markdown 涵盖范围之内的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 M">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-01T12:52:24.000Z">
+<meta property="og:updated_time" content="2018-05-01T14:39:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown语法">
 <meta name="twitter:description" content="Markdown是一种轻量级标记语言，它用简洁的语法代替排版，使我们专心于码字。它的目标是实现易读易写，成为一种适用于网络的书写语言。同时，Markdown支持嵌入html标签。 Markdown特点  兼容 HTML  Markdown 的格式语法只涵盖纯文本可以涵盖的范围，不在 Markdown 涵盖范围之内的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 M">
@@ -379,27 +379,48 @@
           
 
           
+            <span class="post-wordcount">
+              
+                
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  6,301
+                </span>
+              
+
+              
+
+              
+            </span>
+          
+
+          
             <span class="post-meta-divider">|</span>
             <span class="page-pv"><i class="fa fa-file-o"></i>
             <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
             </span>
           
 
-          
 
           
 
-          
-          <span class="post-meta-divider">|</span>
-            <span class="post-tags">
-              
-                <a href="/tags/markown/" rel="tag"># markown</a>
-              
-                <a href="/tags/语法/" rel="tag"># 语法</a>
-              
-            </span>
-          
-
+          <div>
+            
+              <span class="post-tags">
+                
+                  <a href="/tags/markown/" rel="tag"># markown</a>
+                
+                  <a href="/tags/语法/" rel="tag"># 语法</a>
+                
+              </span>
+            
+          </div>
         </div>
       </header>
     
@@ -439,6 +460,7 @@ This is another regular paragraph.
 <li>Markdown 语法在 HTML 区块标签中将不会被进行处理，而Markdown 语法在 HTML 区段标签间是有效的。</li>
 <li>HTML 的区段（行内）标签如 <code>&lt;span&gt;</code>、<code>&lt;cite&gt;</code>、<code>&lt;del&gt;</code> 则不受限制，可以在 Markdown 的段落、列表或是标题里任意使用。依照个人习惯，甚至可以不用Markdown 格式，而直接采用 HTML 标签来格式化。</li>
 </ul>
+<hr>
 <h4 id="autoescape">特殊字符自动转换</h4>
 
 <p>在 HTML 文件中，有两个字符需要特殊处理： <code>&lt;</code> 和 <code>&amp;</code> 。 <code>&lt;</code> 符号用于起始标签，<code>&amp;</code> 符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是 <code>&amp;lt;</code> 和 <code>&amp;amp;</code>。</p>
@@ -467,6 +489,7 @@ This is another regular paragraph.
 <p>「由一个或多个连续的文本行组成」这句话其实暗示了 Markdown 允许段落内的强迫换行（插入换行符），这个特性和其他大部分的 text-to-HTML 格式不一样（包括 Movable Type 的「Convert Line Breaks」选项），其它的格式会把每个换行符都转成 <code>&lt;br /&gt;</code> 标签。</p>
 <p>如果你<strong>真的</strong>想要插入 <code>&lt;br /&gt;</code> 标签的话，在行尾加上两个以上的格然后回车。</p>
 <p>是的，这确实需要花比较多功夫来插入 <code>&lt;br /&gt;</code> ，但是「每个换行都转换为 <code>&lt;br /&gt;</code>」的方法在 Markdown 中并不适合， Markdown 中 email 式的 <a href="#blockquote">区块引用</a> 和多段落的 <a href="#list">列表</a> 在使用换行来排版的时候，不但更好用，还更好阅读。</p>
+<hr>
 <h4 id="header">标题</h4>
 
 <p>Markdown 支持两种标题的语法，类 [Setext] [1] 和类 [atx] [2] 形式。</p>
@@ -489,7 +512,8 @@ This is an H2
 ## This is an H2 ##
 
 ### This is an H3 ######
-</code></pre><h4 id="blockquote">Blockquotes</h4>
+</code></pre><hr>
+<h4 id="blockquote">Blockquotes</h4>
 
 <p>Markdown 标记区块引用是使用类似 email 中用 <code>&gt;</code> 的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 <code>&gt;</code> ：</p>
 <pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
@@ -521,6 +545,7 @@ id sem consectetuer libero luctus adipiscing.
 &gt; 
 &gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);
 </code></pre><p>任何标准的文本编辑器都能简单地建立 email 样式的引用，例如 BBEdit ，你可以选取文字后然后从选单中选择<em>增加引用阶层</em>。</p>
+<hr>
 <h4 id="list">列表</h4>
 
 <p>Markdown 支持有序列表和无序列表。</p>
@@ -617,7 +642,8 @@ sit amet, consectetuer adipiscing elit.
 <pre><code>1986. What a great season.
 </code></pre><p>换句话说，也就是在行首出现<strong>数字-句点-空白</strong>，要避免这样的状况，你可以在句点前面加上反斜杠。</p>
 <pre><code>1986\. What a great season.
-</code></pre><h4 id="precode">程序代码区块</h4>
+</code></pre><hr>
+<h4 id="precode">程序代码区块</h4>
 
 <p>和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示，Markdown 会用 <code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code> 标签来把代码区块包起来。</p>
 <p>要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入：</p>
@@ -653,6 +679,7 @@ end tell
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre><p>代码区块中，一般的 Markdown 语法不会被转换，像是星号便只是星号，这表示你可以很容易地以 Markdown 语法撰写 Markdown 语法相关的文件。</p>
+<hr>
 <h4 id="hr">分隔线</h4>
 
 <p>你可以在一行中用三个或以上的星号、减号来建立一个分隔线，行内不能有其他东西。你也可以在星号中间插入空格。下面每种写法都可以建立分隔线：</p>
@@ -746,6 +773,7 @@ than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
 [MSN](http://search.msn.com/ &quot;MSN Search&quot;).
 </code></pre><p>参考式的链接其实重点不在于它比较好写，而是它比较好读，比较一下上面的范例，使用参考式的文章本身只有 81 个字符，但是用行内形式的连结却会增加到 176 个字符，如果是用纯 HTML 格式来写，会有 234 个字符，在 HTML 格式中，标签比文字还要多。</p>
 <p>使用 Markdown 的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的信息移到段落文字之外，你就可以增加连结而不让文章的阅读感觉被打断。</p>
+<hr>
 <h4 id="achor">锚点</h4>
 
 <p>网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。</p>
@@ -758,14 +786,16 @@ than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
 <pre><code>## 0. 目录{#index}
 
 跳转到[目录](#index)
-</code></pre><h4 id="foot">注脚</h4>
+</code></pre><hr>
+<h4 id="foot">注脚</h4>
 
 <p>在需要添加注脚的文字后加上脚注名字[^注脚名字],称为加注。 然后在文本的任意位置(一般在最后)添加脚注，脚注前必须有对应的脚注名字。<br>注意：经测试注脚与注脚之间必须空一行，不然会失效。成功后会发现，即使你没有把注脚写在文末，经Markdown转换后，也会自动归类到文章的最后。</p>
 <pre><code>使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。
 [^1]:Markdown是一种纯文本标记语言
 [^2]:HyperText Markup Language 超文本标记语言
 [^Le]:开源笔记平台，支持Markdown和笔记直接发为博文
-</code></pre><h4 id="em">强调</h4>
+</code></pre><hr>
+<h4 id="em">强调</h4>
 
 <p>Markdown 使用星号（<code>*</code>）和底线（<code>_</code>）作为标记强调字词的符号，被 <code>*</code> 或 <code>_</code> 包围的字词会被转成用 <code>&lt;em&gt;</code> 标签包围，用两个 <code>*</code> 或 <code>_</code> 包起来的话，则会被转成 <code>&lt;strong&gt;</code>，例如：</p>
 <pre><code>*single asterisks*
@@ -789,7 +819,8 @@ __double underscores__
 </code></pre><p>但是<strong>如果你的 <code>*</code> 和 <code>_</code> 两边都有空白的话，它们就只会被当成普通的符号</strong>。</p>
 <p>如果要在文字前后直接插入普通的星号或底线，你可以用反斜杠：</p>
 <pre><code>\*this text is surrounded by literal asterisks\*
-</code></pre><h4 id="code">代码</h4>
+</code></pre><hr>
+<h4 id="code">代码</h4>
 
 <p>如果要标记一小段行内代码，你可以用反引号把它包起来（<code>`</code>），例如：</p>
 <pre><code>Use the `printf()` function.
@@ -816,7 +847,8 @@ A backtick-delimited string in a code span: `` `foo` ``
 </code></pre><p>以产生：</p>
 <pre><code>&lt;p&gt;&lt;code&gt;&amp;amp;#8212;&lt;/code&gt; is the decimal-encoded
 equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
-</code></pre><h4 id="img">图片</h4>
+</code></pre><hr>
+<h4 id="img">图片</h4>
 
 <p>很明显地，要在纯文本应用中设计一个 「自然」的语法来插入图片是有一定难度的。</p>
 <p>Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： <strong>行内式</strong>和<strong>参考式</strong>。</p>
@@ -853,6 +885,7 @@ equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
 &amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;
 </code></pre><p>在浏览器里面，这段字符串（其实是 <code>&lt;a href=&quot;mailto:address@example.com&quot;&gt;address@example.com&lt;/a&gt;</code>）会变成一个可以点击的「<a href="mailto:address@example.com" target="_blank" rel="noopener">address@example.com</a>」链接。</p>
 <p>（这种作法虽然可以糊弄不少的机器人，但并无法全部挡下来，不过这样也比什么都不做好些。无论如何，公开你的信箱终究会引来广告信件的。）</p>
+<hr>
 <h4 id="backslash">反斜杠</h4>
 
 <p>Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用 <code>&lt;em&gt;</code> 标签），你可以在星号的前面加上反斜杠：</p>
@@ -870,7 +903,8 @@ _   底线
 -   减号
 .   英文句点
 !   惊叹号
-</code></pre><h4 id="equation">公式</h4>
+</code></pre><hr>
+<h4 id="equation">公式</h4>
 
 <p>行内公式（$ 包裹），例如：</p>
 <pre><code>质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
@@ -881,9 +915,178 @@ $$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
 
 $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
 </code></pre><p>访问<a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a>参考更多使用方法。</p>
+<hr>
 <h4 id="graph">流程图</h4>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: Start:&gt;https://www.zybuluo.com</span><br><span class="line">io=&gt;inputoutput: verification</span><br><span class="line">op=&gt;operation: Your Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line">sub=&gt;subroutine: Your Subroutine</span><br><span class="line">e=&gt;end</span><br><span class="line">st-&gt;io-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;sub-&gt;io</span><br></pre></td></tr></table></figure>
+<pre><code>(```)flow
+st=&gt;start: Start|past:&gt;http://www.google.com[blank]
+e=&gt;end: End:&gt;http://www.google.com
+op1=&gt;operation: My Operation|past
+op2=&gt;operation: Stuff|current
+sub1=&gt;subroutine: My Subroutine|invalid
+cond=&gt;condition: Yes
+or No?|approved:&gt;http://www.google.com
+c2=&gt;condition: Good idea|rejected
+io=&gt;inputoutput: catch something...|request
+st-&gt;op1(right)-&gt;cond
+cond(yes, right)-&gt;c2
+cond(no)-&gt;sub1(left)-&gt;op1
+c2(yes)-&gt;io-&gt;e
+c2(no)-&gt;op2-&gt;e
+(```)
+</code></pre><p>显示如下：</p>
+<div id="flowchart-0" class="flow-chart"></div>
+
+<p>流程图分为两部分<strong>定义参数</strong>和<strong>连接参数</strong></p>
+<pre><code>tag=&gt;type: content:&gt;url         // 形参格式 
+st=&gt;start: 开始:&gt;http://www.baidu.com[blank]  //实参格式
+</code></pre><p><strong>注：<code>st=&gt;start: 开始</code>的<code>:</code>后保持空格</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">形参</th>
+<th style="text-align:center">实参</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">tag</td>
+<td style="text-align:center">st</td>
+<td style="text-align:center">标签（可以自定义）</td>
+</tr>
+<tr>
+<td style="text-align:center">=&gt;</td>
+<td style="text-align:center">=&gt;</td>
+<td style="text-align:center">赋值</td>
+</tr>
+<tr>
+<td style="text-align:center">type</td>
+<td style="text-align:center">start</td>
+<td style="text-align:center">类型 (6种类型)</td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">开始</td>
+<td style="text-align:center">描述内容 (可以自定义)</td>
+</tr>
+<tr>
+<td style="text-align:center">:&gt;url</td>
+<td style="text-align:center"><a href="http://www.baidu.com[blank]" target="_blank" rel="noopener">http://www.baidu.com[blank]</a></td>
+<td style="text-align:center">链接与跳转方式 兼容性很差</td>
+</tr>
+</tbody>
+</table>
+<p>单元类型：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">6种类型</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">start</td>
+<td style="text-align:center">启动</td>
+</tr>
+<tr>
+<td style="text-align:center">end</td>
+<td style="text-align:center">结束</td>
+</tr>
+<tr>
+<td style="text-align:center">operation</td>
+<td style="text-align:center">程序</td>
+</tr>
+<tr>
+<td style="text-align:center">subroutine</td>
+<td style="text-align:center">子程序</td>
+</tr>
+<tr>
+<td style="text-align:center">condition</td>
+<td style="text-align:center">条件</td>
+</tr>
+<tr>
+<td style="text-align:center">inputoutput</td>
+<td style="text-align:center">输出</td>
+</tr>
+</tbody>
+</table>
+<p>连接示例：</p>
+<pre><code>st-&gt;c1(yes,right)-&gt;c2(yes,right)-&gt;c3(yes,right)-&gt;io-&gt;e
+开始-&gt;判断条件1为no-&gt;判断条件2为no-&gt;判断条件3为no-&gt;输出-&gt;结束
+</code></pre><table>
+<thead>
+<tr>
+<th style="text-align:center">形参</th>
+<th style="text-align:center">实参</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-&gt;</td>
+<td style="text-align:center">-&gt;</td>
+<td style="text-align:center">连接</td>
+</tr>
+<tr>
+<td style="text-align:center">condition</td>
+<td style="text-align:center">c1</td>
+<td style="text-align:center">条件</td>
+</tr>
+<tr>
+<td style="text-align:center">(布尔值,方向)</td>
+<td style="text-align:center">(yes,right)</td>
+<td style="text-align:center">如果满足向右连接，4种方向：right ，left，up ，down 默认为：down</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注：operation (程序); subroutine (子程序) ;condition (条件)，都可以在括号里加入连接方向</strong></p>
+<pre><code>operation(right) 
+subroutine(left)
+condition(yes,right)    // 只有条件 才能加布尔值
+</code></pre><p>了解更多使用法，访问<a href="http://flowchart.js.org/" target="_blank" rel="noopener">流程图语法参考</a></p>
+<hr>
+<h4 id="form">表格</h4>
+
+<p>基本语法：</p>
+<ul>
+<li>第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。</li>
+<li>列于列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。</li>
+<li>第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。</li>
+</ul>
+<p>简单方式：</p>
+<pre><code>学号|姓名|分数
+-|-|-
+小明|男|75
+小红|女|79
+小陆|男|92
+</code></pre><p>原生方式：</p>
+<pre><code>|学号|姓名|分数|
+|-|-|-|
+|小明|男|75|
+|小红|女|79|
+|小陆|男|92|
+</code></pre><p>对齐方式：</p>
+<pre><code>第一列 | 第二列 | 第三列
+-------: | :------: | :-------
+右对齐 | 居中 | 左对齐
+</code></pre><p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
+
       
     </div>
     
@@ -1094,7 +1297,7 @@ $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#overview"><span class="nav-number">1.</span> <span class="nav-text">Markdown特点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#html"><span class="nav-number">1.1.</span> <span class="nav-text">兼容 HTML</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#autoescape"><span class="nav-number">1.2.</span> <span class="nav-text">特殊字符自动转换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#block"><span class="nav-number">2.</span> <span class="nav-text">区块元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#p"><span class="nav-number">2.1.</span> <span class="nav-text">段落和换行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#header"><span class="nav-number">2.2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#blockquote"><span class="nav-number">2.3.</span> <span class="nav-text">Blockquotes</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#list"><span class="nav-number">2.4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#precode"><span class="nav-number">2.5.</span> <span class="nav-text">程序代码区块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hr"><span class="nav-number">2.6.</span> <span class="nav-text">分隔线</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#span"><span class="nav-number">3.</span> <span class="nav-text">区段元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#link"><span class="nav-number">3.1.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#achor"><span class="nav-number">3.2.</span> <span class="nav-text">锚点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#foot"><span class="nav-number">3.3.</span> <span class="nav-text">注脚</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#em"><span class="nav-number">3.4.</span> <span class="nav-text">强调</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#code"><span class="nav-number">3.5.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#img"><span class="nav-number">3.6.</span> <span class="nav-text">图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#misc"><span class="nav-number">4.</span> <span class="nav-text">其它</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#autolink"><span class="nav-number">4.1.</span> <span class="nav-text">自动链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#backslash"><span class="nav-number">4.2.</span> <span class="nav-text">反斜杠</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#equation"><span class="nav-number">4.3.</span> <span class="nav-text">公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#graph"><span class="nav-number">4.4.</span> <span class="nav-text">流程图</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#overview"><span class="nav-number">1.</span> <span class="nav-text">Markdown特点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#html"><span class="nav-number">1.1.</span> <span class="nav-text">兼容 HTML</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#autoescape"><span class="nav-number">1.2.</span> <span class="nav-text">特殊字符自动转换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#block"><span class="nav-number">2.</span> <span class="nav-text">区块元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#p"><span class="nav-number">2.1.</span> <span class="nav-text">段落和换行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#header"><span class="nav-number">2.2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#blockquote"><span class="nav-number">2.3.</span> <span class="nav-text">Blockquotes</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#list"><span class="nav-number">2.4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#precode"><span class="nav-number">2.5.</span> <span class="nav-text">程序代码区块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hr"><span class="nav-number">2.6.</span> <span class="nav-text">分隔线</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#span"><span class="nav-number">3.</span> <span class="nav-text">区段元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#link"><span class="nav-number">3.1.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#achor"><span class="nav-number">3.2.</span> <span class="nav-text">锚点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#foot"><span class="nav-number">3.3.</span> <span class="nav-text">注脚</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#em"><span class="nav-number">3.4.</span> <span class="nav-text">强调</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#code"><span class="nav-number">3.5.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#img"><span class="nav-number">3.6.</span> <span class="nav-text">图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#misc"><span class="nav-number">4.</span> <span class="nav-text">其它</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#autolink"><span class="nav-number">4.1.</span> <span class="nav-text">自动链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#backslash"><span class="nav-number">4.2.</span> <span class="nav-text">反斜杠</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#equation"><span class="nav-number">4.3.</span> <span class="nav-text">公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#graph"><span class="nav-number">4.4.</span> <span class="nav-text">流程图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#form"><span class="nav-number">4.5.</span> <span class="nav-text">表格</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1127,6 +1330,15 @@ $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
   </span>
   <span class="author" itemprop="copyrightHolder">Gaozong</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">6.3k</span>
   
 </div>
 
