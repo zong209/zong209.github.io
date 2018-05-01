@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.gzong.top/"/>
-  <updated>2018-04-29T15:20:18.000Z</updated>
+  <updated>2018-05-01T12:52:24.000Z</updated>
   <id>blog.gzong.top/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="blog.gzong.top/2018/04/29/hello-world/"/>
-    <id>blog.gzong.top/2018/04/29/hello-world/</id>
-    <published>2018-04-29T15:20:18.000Z</published>
-    <updated>2018-04-29T15:20:18.000Z</updated>
+    <title>Markdown语法</title>
+    <link href="blog.gzong.top/2018/05/01/mkdown/"/>
+    <id>blog.gzong.top/2018/05/01/mkdown/</id>
+    <published>2018-05-01T08:38:16.000Z</published>
+    <updated>2018-05-01T12:52:24.000Z</updated>
     
     <summary type="html">
     
@@ -29,12 +29,46 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;p&gt;Markdown是一种轻量级标记语言，它用简洁的语法代替排版，使我们专心于码字。它的目标是实现易读易写，成为一种适用于网络的书写语言。同时，Markdown支持嵌入html标签。&lt;br&gt;&lt;!-- &lt;font
         
       
     
     </summary>
     
+      <category term="教程" scheme="blog.gzong.top/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="markown" scheme="blog.gzong.top/tags/markown/"/>
+    
+      <category term="语法" scheme="blog.gzong.top/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo个性化配置</title>
+    <link href="blog.gzong.top/2018/04/30/hexo-config/"/>
+    <id>blog.gzong.top/2018/04/30/hexo-config/</id>
+    <published>2018-04-30T14:04:07.000Z</published>
+    <updated>2018-05-01T08:36:05.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;hexo个性化配置&quot;&gt;&lt;a href=&quot;#hexo个性化配置&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="blog" scheme="blog.gzong.top/categories/blog/"/>
+    
+    
+      <category term="Hexo" scheme="blog.gzong.top/tags/Hexo/"/>
+    
+      <category term="Blog" scheme="blog.gzong.top/tags/Blog/"/>
     
   </entry>
   
