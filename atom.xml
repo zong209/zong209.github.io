@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.gzong.top/"/>
-  <updated>2018-05-02T07:15:01.000Z</updated>
+  <updated>2018-05-02T07:58:29.000Z</updated>
   <id>blog.gzong.top/</id>
   
   <author>
@@ -17,11 +17,65 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python代码模块</title>
+    <link href="blog.gzong.top/2018/05/02/pythonblock/"/>
+    <id>blog.gzong.top/2018/05/02/pythonblock/</id>
+    <published>2018-05-02T07:30:03.000Z</published>
+    <updated>2018-05-02T07:58:29.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="codeblock" scheme="blog.gzong.top/categories/codeblock/"/>
+    
+    
+      <category term="Code" scheme="blog.gzong.top/tags/Code/"/>
+    
+      <category term="Python" scheme="blog.gzong.top/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS代码模块</title>
+    <link href="blog.gzong.top/2018/05/02/jsblock/"/>
+    <id>blog.gzong.top/2018/05/02/jsblock/</id>
+    <published>2018-05-02T07:30:03.000Z</published>
+    <updated>2018-05-02T07:58:26.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;常用的JavaScript功能模块。&lt;/p&gt;
+&lt;h4 id=&quot;deleteSpace&quot;&gt;去除字符串中空格&lt;/h4&gt;
+
+&lt;p&gt;1、去掉字符串前后所有空格&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function Trim(str)
+{ 
+return
+        
+      
+    
+    </summary>
+    
+      <category term="codeblock" scheme="blog.gzong.top/categories/codeblock/"/>
+    
+    
+      <category term="JavaScript" scheme="blog.gzong.top/tags/JavaScript/"/>
+    
+      <category term="Code" scheme="blog.gzong.top/tags/Code/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markdown语法</title>
     <link href="blog.gzong.top/2018/05/01/mkdown/"/>
     <id>blog.gzong.top/2018/05/01/mkdown/</id>
     <published>2018-05-01T08:38:16.000Z</published>
-    <updated>2018-05-02T07:15:01.000Z</updated>
+    <updated>2018-05-02T07:57:28.000Z</updated>
     
     <summary type="html">
     
@@ -38,7 +92,7 @@
       <category term="教程" scheme="blog.gzong.top/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="markown" scheme="blog.gzong.top/tags/markown/"/>
+      <category term="Markown" scheme="blog.gzong.top/tags/Markown/"/>
     
       <category term="语法" scheme="blog.gzong.top/tags/%E8%AF%AD%E6%B3%95/"/>
     
@@ -49,7 +103,7 @@
     <link href="blog.gzong.top/2018/04/30/hexo-config/"/>
     <id>blog.gzong.top/2018/04/30/hexo-config/</id>
     <published>2018-04-30T14:04:07.000Z</published>
-    <updated>2018-05-02T07:12:53.000Z</updated>
+    <updated>2018-05-02T08:05:30.000Z</updated>
     
     <summary type="html">
     
@@ -63,7 +117,7 @@
     
     </summary>
     
-      <category term="blog" scheme="blog.gzong.top/categories/blog/"/>
+      <category term="教程" scheme="blog.gzong.top/categories/%E6%95%99%E7%A8%8B/"/>
     
     
       <category term="Hexo" scheme="blog.gzong.top/tags/Hexo/"/>
