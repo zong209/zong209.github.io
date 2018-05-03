@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.gzong.top/"/>
-  <updated>2018-05-02T07:58:29.000Z</updated>
+  <updated>2018-05-03T15:07:09.000Z</updated>
   <id>blog.gzong.top/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>电子元器件质量检测代码整理</title>
+    <link href="blog.gzong.top/2018/05/03/mvcode/"/>
+    <id>blog.gzong.top/2018/05/03/mvcode/</id>
+    <published>2018-05-03T07:18:29.000Z</published>
+    <updated>2018-05-03T15:07:09.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;电子元器件质量检测模型，主要过程包括：图像预处理、电子元器件检测与识别、图像配准、图像分割、缺陷分离、质量判定。&lt;/p&gt;
+&lt;h3 id=&quot;post_process&quot;&gt;图像预处理&lt;/h3&gt;
+
+&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="codeblock" scheme="blog.gzong.top/categories/codeblock/"/>
+    
+    
+      <category term="MachineVision" scheme="blog.gzong.top/tags/MachineVision/"/>
+    
+      <category term="Python" scheme="blog.gzong.top/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python代码模块</title>
@@ -64,9 +95,9 @@ return
       <category term="codeblock" scheme="blog.gzong.top/categories/codeblock/"/>
     
     
-      <category term="JavaScript" scheme="blog.gzong.top/tags/JavaScript/"/>
-    
       <category term="Code" scheme="blog.gzong.top/tags/Code/"/>
+    
+      <category term="JavaScript" scheme="blog.gzong.top/tags/JavaScript/"/>
     
   </entry>
   
