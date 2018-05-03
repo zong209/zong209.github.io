@@ -8,8 +8,20 @@
         <category>codeblock</category>
       </categories>
       <tags>
-        <tag>MachineVision</tag>
         <tag>Python</tag>
+        <tag>MachineVision</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JS代码模块]]></title>
+    <url>%2F2018%2F05%2F02%2Fjsblock%2F</url>
+    <content type="text"><![CDATA[常用的JavaScript功能模块。 去除字符串中空格 1、去掉字符串前后所有空格 function Trim(str) { return str.replace(/(^\s*)|(\s*$)/g, &quot;&quot;); } 2、去掉字符串中所有空格(is_global=&quot;g&quot;) function Trim(str, is_global) { var result; result = str.replace(/(^\s+)|(\s+$)/g, &quot;&quot;); if (is_global.toLowerCase() == &quot;g&quot;) { result = result.replace(/\s/g, &quot;&quot;); } return result; }]]></content>
+      <categories>
+        <category>codeblock</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>Code</tag>
       </tags>
   </entry>
   <entry>
@@ -22,18 +34,6 @@
       <tags>
         <tag>Code</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[JS代码模块]]></title>
-    <url>%2F2018%2F05%2F02%2Fjsblock%2F</url>
-    <content type="text"><![CDATA[常用的JavaScript功能模块。 去除字符串中空格 1、去掉字符串前后所有空格 function Trim(str) { return str.replace(/(^\s*)|(\s*$)/g, &quot;&quot;); } 2、去掉字符串中所有空格(is_global=&quot;g&quot;) function Trim(str, is_global) { var result; result = str.replace(/(^\s+)|(\s+$)/g, &quot;&quot;); if (is_global.toLowerCase() == &quot;g&quot;) { result = result.replace(/\s/g, &quot;&quot;); } return result; }]]></content>
-      <categories>
-        <category>codeblock</category>
-      </categories>
-      <tags>
-        <tag>Code</tag>
-        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>

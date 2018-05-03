@@ -41,29 +41,9 @@
       <category term="codeblock" scheme="blog.gzong.top/categories/codeblock/"/>
     
     
+      <category term="Python" scheme="blog.gzong.top/tags/Python/"/>
+    
       <category term="MachineVision" scheme="blog.gzong.top/tags/MachineVision/"/>
-    
-      <category term="Python" scheme="blog.gzong.top/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python代码模块</title>
-    <link href="blog.gzong.top/2018/05/02/pythonblock/"/>
-    <id>blog.gzong.top/2018/05/02/pythonblock/</id>
-    <published>2018-05-02T07:30:03.000Z</published>
-    <updated>2018-05-02T07:58:29.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="codeblock" scheme="blog.gzong.top/categories/codeblock/"/>
-    
-    
-      <category term="Code" scheme="blog.gzong.top/tags/Code/"/>
-    
-      <category term="Python" scheme="blog.gzong.top/tags/Python/"/>
     
   </entry>
   
@@ -95,9 +75,29 @@ return
       <category term="codeblock" scheme="blog.gzong.top/categories/codeblock/"/>
     
     
+      <category term="JavaScript" scheme="blog.gzong.top/tags/JavaScript/"/>
+    
       <category term="Code" scheme="blog.gzong.top/tags/Code/"/>
     
-      <category term="JavaScript" scheme="blog.gzong.top/tags/JavaScript/"/>
+  </entry>
+  
+  <entry>
+    <title>Python代码模块</title>
+    <link href="blog.gzong.top/2018/05/02/pythonblock/"/>
+    <id>blog.gzong.top/2018/05/02/pythonblock/</id>
+    <published>2018-05-02T07:30:03.000Z</published>
+    <updated>2018-05-02T07:58:29.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="codeblock" scheme="blog.gzong.top/categories/codeblock/"/>
+    
+    
+      <category term="Code" scheme="blog.gzong.top/tags/Code/"/>
+    
+      <category term="Python" scheme="blog.gzong.top/tags/Python/"/>
     
   </entry>
   
