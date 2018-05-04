@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.gzong.top/"/>
-  <updated>2018-05-03T15:07:09.000Z</updated>
+  <updated>2018-05-04T12:59:49.000Z</updated>
   <id>blog.gzong.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="blog.gzong.top/2018/05/03/mvcode/"/>
     <id>blog.gzong.top/2018/05/03/mvcode/</id>
     <published>2018-05-03T07:18:29.000Z</published>
-    <updated>2018-05-03T15:07:09.000Z</updated>
+    <updated>2018-05-04T12:59:49.000Z</updated>
     
     <summary type="html">
     
@@ -52,7 +52,7 @@
     <link href="blog.gzong.top/2018/05/02/jsblock/"/>
     <id>blog.gzong.top/2018/05/02/jsblock/</id>
     <published>2018-05-02T07:30:03.000Z</published>
-    <updated>2018-05-02T07:58:26.000Z</updated>
+    <updated>2018-05-04T12:59:49.000Z</updated>
     
     <summary type="html">
     
@@ -61,11 +61,11 @@
         
         
           &lt;p&gt;常用的JavaScript功能模块。&lt;/p&gt;
-&lt;h4 id=&quot;deleteSpace&quot;&gt;去除字符串中空格&lt;/h4&gt;
+&lt;h4 id=&quot;deleteSpace&quot;&gt;去除字符串中空格&lt;/h4&gt;
 
 &lt;p&gt;1、去掉字符串前后所有空格&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;function Trim(str)
-{ 
+{
 return
         
       
@@ -86,7 +86,7 @@ return
     <link href="blog.gzong.top/2018/05/02/pythonblock/"/>
     <id>blog.gzong.top/2018/05/02/pythonblock/</id>
     <published>2018-05-02T07:30:03.000Z</published>
-    <updated>2018-05-02T07:58:29.000Z</updated>
+    <updated>2018-05-04T13:00:22.000Z</updated>
     
     <summary type="html">
     
@@ -106,7 +106,7 @@ return
     <link href="blog.gzong.top/2018/05/01/mkdown/"/>
     <id>blog.gzong.top/2018/05/01/mkdown/</id>
     <published>2018-05-01T08:38:16.000Z</published>
-    <updated>2018-05-02T07:57:28.000Z</updated>
+    <updated>2018-05-04T12:59:49.000Z</updated>
     
     <summary type="html">
     
@@ -134,7 +134,7 @@ return
     <link href="blog.gzong.top/2018/04/30/hexo-config/"/>
     <id>blog.gzong.top/2018/04/30/hexo-config/</id>
     <published>2018-04-30T14:04:07.000Z</published>
-    <updated>2018-05-02T08:05:30.000Z</updated>
+    <updated>2018-05-04T13:21:31.000Z</updated>
     
     <summary type="html">
     
