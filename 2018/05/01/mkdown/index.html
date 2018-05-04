@@ -1,4 +1,462 @@
-<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#222"><script></script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4"><link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222"><meta name="keywords" content="Markown,语法,"><link rel="alternate" href="/atom.xml" title="GaoZong's Notes" type="application/atom+xml"><meta name="description" content="Markdown是一种轻量级标记语言，它用简洁的语法代替排版，使我们专心于码字。它的目标是实现易读易写，成为一种适用于网络的书写语言。同时，Markdown支持嵌入html标签。 Markdown特点  兼容 HTML  Markdown 的格式语法只涵盖纯文本可以涵盖的范围，不在 Markdown 涵盖范围之内的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 M"><meta name="keywords" content="Markown,语法"><meta property="og:type" content="article"><meta property="og:title" content="Markdown语法"><meta property="og:url" content="blog.gzong.top/2018/05/01/mkdown/index.html"><meta property="og:site_name" content="GaoZong&#39;s Notes"><meta property="og:description" content="Markdown是一种轻量级标记语言，它用简洁的语法代替排版，使我们专心于码字。它的目标是实现易读易写，成为一种适用于网络的书写语言。同时，Markdown支持嵌入html标签。 Markdown特点  兼容 HTML  Markdown 的格式语法只涵盖纯文本可以涵盖的范围，不在 Markdown 涵盖范围之内的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 M"><meta property="og:locale" content="zh-Hans"><meta property="og:updated_time" content="2018-05-04T12:59:49.000Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Markdown语法"><meta name="twitter:description" content="Markdown是一种轻量级标记语言，它用简洁的语法代替排版，使我们专心于码字。它的目标是实现易读易写，成为一种适用于网络的书写语言。同时，Markdown支持嵌入html标签。 Markdown特点  兼容 HTML  Markdown 的格式语法只涵盖纯文本可以涵盖的范围，不在 Markdown 涵盖范围之内的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 M"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Gemini",version:"5.1.4",sidebar:{position:"left",display:"post",offset:12,b2t:!0,scrollpercent:!0,onmobile:!0},fancybox:!0,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},duoshuo:{userId:"0",author:"博主"},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><link rel="canonical" href="blog.gzong.top/2018/05/01/mkdown/"><title>Markdown语法 | GaoZong's Notes</title><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?da7c68f2daff4be5c7f3fcb7758a9e92";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">GaoZong's Notes</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">HomePage</p></div><div class="site-nav-toggle"> <button><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br> 首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i><br> 关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br> 标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br> 分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br> 归档</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br> 搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"> <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="blog.gzong.top/2018/05/01/mkdown/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Gaozong"><meta itemprop="description" content=""><meta itemprop="image" content="/images/pic_person.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="GaoZong's Notes"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Markdown语法</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-01T16:38:16+08:00">2018-05-01</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/教程/" itemprop="url" rel="index"><span itemprop="name">教程</span></a></span></span> <span class="post-wordcount"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i></span> <span class="post-meta-item-text">字数统计&#58;</span> <span title="字数统计">6,322</span></span> <span class="post-meta-divider">|</span><span class="page-pv"><i class="fa fa-file-o"></i><span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span><div><span class="post-tags"><a href="/tags/Markown/" rel="tag"><i class="fa fa-tag"></i> Markown</a><a href="/tags/语法/" rel="tag"><i class="fa fa-tag"></i> 语法</a></span></div></div></header><div class="post-body" itemprop="articleBody"><p>Markdown是一种轻量级标记语言，它用简洁的语法代替排版，使我们专心于码字。它的目标是实现易读易写，成为一种适用于网络的书写语言。同时，Markdown支持嵌入html标签。<br></p><h3 id="overview">Markdown特点</h3><h4 id="html">兼容 HTML</h4><p>Markdown 的格式语法只涵盖纯文本可以涵盖的范围，不在 Markdown 涵盖范围之内的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签即可。</p><p>在 Markdown 文件里加上一段 HTML 表格：</p><pre><code>This is a regular paragraph.
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Markown,语法," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="GaoZong's Notes" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="Markdown是一种轻量级标记语言，它用简洁的语法代替排版，使我们专心于码字。它的目标是实现易读易写，成为一种适用于网络的书写语言。同时，Markdown支持嵌入html标签。 Markdown特点  兼容 HTML  Markdown 的格式语法只涵盖纯文本可以涵盖的范围，不在 Markdown 涵盖范围之内的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 M">
+<meta name="keywords" content="Markown,语法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法">
+<meta property="og:url" content="blog.gzong.top/2018/05/01/mkdown/index.html">
+<meta property="og:site_name" content="GaoZong&#39;s Notes">
+<meta property="og:description" content="Markdown是一种轻量级标记语言，它用简洁的语法代替排版，使我们专心于码字。它的目标是实现易读易写，成为一种适用于网络的书写语言。同时，Markdown支持嵌入html标签。 Markdown特点  兼容 HTML  Markdown 的格式语法只涵盖纯文本可以涵盖的范围，不在 Markdown 涵盖范围之内的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 M">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-05-04T12:59:49.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown语法">
+<meta name="twitter:description" content="Markdown是一种轻量级标记语言，它用简洁的语法代替排版，使我们专心于码字。它的目标是实现易读易写，成为一种适用于网络的书写语言。同时，Markdown支持嵌入html标签。 Markdown特点  兼容 HTML  Markdown 的格式语法只涵盖纯文本可以涵盖的范围，不在 Markdown 涵盖范围之内的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 M">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="blog.gzong.top/2018/05/01/mkdown/"/>
+
+
+
+
+
+  <title>Markdown语法 | GaoZong's Notes</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?da7c68f2daff4be5c7f3fcb7758a9e92";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/zong209"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">GaoZong's Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">HomePage</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="blog.gzong.top/2018/05/01/mkdown/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Gaozong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/pic_person.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GaoZong's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Markdown语法</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-01T16:38:16+08:00">
+                2018-05-01
+              </time>
+            
+
+            
+
+            
+          </span>
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-wordcount">
+              
+                
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  6,322
+                </span>
+              
+
+              
+
+              
+            </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye" aria-hidden="true"></i>
+            </span>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" >
+            </span>
+          
+
+
+          
+
+          <div>
+            
+              <span class="post-tags">
+                
+                  <a href="/tags/Markown/" rel="tag"><i class="fa fa-tag"></i>Markown</a>
+                
+                  <a href="/tags/语法/" rel="tag"><i class="fa fa-tag"></i>语法</a>
+                
+              </span>
+            
+          </div>
+        </div>
+      </header>
+    
+
+
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Markdown是一种轻量级标记语言，它用简洁的语法代替排版，使我们专心于码字。它的目标是实现易读易写，成为一种适用于网络的书写语言。同时，Markdown支持嵌入html标签。<br><!-- <font size="2">
+<u>注：Markdown使用#、+、*等符号来标记， 符号后面必须跟上<b>至少1个</b>空格才有效！</u>
+</font> --></p>
+<h3 id="overview">Markdown特点</h3>
+
+<h4 id="html">兼容 HTML</h4>
+
+<p>Markdown 的格式语法只涵盖纯文本可以涵盖的范围，不在 Markdown 涵盖范围之内的标签，都可以直接在文件里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签即可。</p>
+<p>在 Markdown 文件里加上一段 HTML 表格：</p>
+<pre><code>This is a regular paragraph.
 
 &lt;table&gt;
     &lt;tr&gt;
@@ -7,46 +465,89 @@
 &lt;/table&gt;
 
 This is another regular paragraph.
-</code></pre><p>注意：</p><ul><li>区块元素──比如 <code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code>、<code>&lt;p&gt;</code> 等标签，必须在前后加上空行与其它内容区隔开，而且这些（元素）的开始与结尾标签，不可以用制表符或空格来缩进。</li><li>Markdown 语法在 HTML 区块标签中将不会被进行处理，而Markdown 语法在 HTML 区段标签间是有效的。</li><li>HTML 的区段（行内）标签如 <code>&lt;span&gt;</code>、<code>&lt;cite&gt;</code>、<code>&lt;del&gt;</code> 则不受限制，可以在 Markdown 的段落、列表或是标题里任意使用。依照个人习惯，甚至可以不用Markdown 格式，而直接采用 HTML 标签来格式化。</li></ul><hr><h4 id="autoescape">特殊字符自动转换</h4><p>在 HTML 文件中，有两个字符需要特殊处理： <code>&lt;</code> 和 <code>&amp;</code> 。 <code>&lt;</code> 符号用于起始标签，<code>&amp;</code> 符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是 <code>&amp;lt;</code> 和 <code>&amp;amp;</code>。</p><p><code>&amp;</code> 符号其实很容易让写作网络文件的人感到困扰，如果你要打「AT&amp;T」 ，你必须要写成「<code>AT&amp;amp;T</code>」 ，而且网址中的 <code>&amp;</code> 字符也要转换。如果你要链接到：</p><pre><code>http://images.google.com/images?num=30&amp;q=larry+bird
-</code></pre><p>你必须要把网址写成：</p><pre><code>http://images.google.com/images?num=30&amp;amp;q=larry+bird
-</code></pre><p>才能放到链接标签的 <code>href</code> 属性里。不用说也知道这很容易忽略，这也可能是 HTML 标准检查所检查到的错误中，数量最多的。</p><p>Markdown 可以自动处理这些符号，如果你使用的 <code>&amp;</code> 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 <code>&amp;amp</code>;。<br>所以你如果要在文件中插入一个著作权的符号，你可以这样写：</p><pre><code>&amp;copy;
-</code></pre><p>Markdown 将不会对这段文字做修改，但是如果你这样写：</p><pre><code>AT&amp;T
-</code></pre><p>Markdown 就会将它转为：</p><pre><code>AT&amp;amp;T
-</code></pre><p>类似的状况也会发生在 <code>&lt;</code> 符号上，因为 Markdown 支持 <a href="#html">兼容 HTML</a> ，如果你是使用 <code>&lt;</code> 符号作为 HTML 标签使用，那 Markdown 也不会对它做任何转换，但是如果你是写：</p><pre><code>4 &lt; 5
-</code></pre><p>Markdown 将会把它转换为：</p><pre><code>4 &amp;lt; 5
-</code></pre><p>不过需要注意的是，code 范围内，不论是行内还是区块， <code>&lt;</code> 和 <code>&amp;</code> 两个符号都<strong>一定</strong>会被转换成 HTML 实体，这项特性让你可以很容易地用 Markdown 写 HTML code （和 HTML 相对而言， HTML 语法中，你要把所有的 <code>&lt;</code> 和 <code>&amp;</code> 都转换为 HTML 实体，才能在 HTML 文件里面写出 HTML code。）</p><hr><h3 id="block">区块元素</h3><h4 id="p">段落和换行</h4><p>一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。</p><p>「由一个或多个连续的文本行组成」这句话其实暗示了 Markdown 允许段落内的强迫换行（插入换行符），这个特性和其他大部分的 text-to-HTML 格式不一样（包括 Movable Type 的「Convert Line Breaks」选项），其它的格式会把每个换行符都转成 <code>&lt;br /&gt;</code> 标签。</p><p>如果你<strong>真的</strong>想要插入 <code>&lt;br /&gt;</code> 标签的话，在行尾加上两个以上的格然后回车。</p><p>是的，这确实需要花比较多功夫来插入 <code>&lt;br /&gt;</code> ，但是「每个换行都转换为 <code>&lt;br /&gt;</code>」的方法在 Markdown 中并不适合， Markdown 中 email 式的 <a href="#blockquote">区块引用</a> 和多段落的 <a href="#list">列表</a> 在使用换行来排版的时候，不但更好用，还更好阅读。</p><hr><h4 id="header">标题</h4><p>Markdown 支持两种标题的语法，类 [Setext] [1] 和类 [atx] [2] 形式。</p><p>类 Setext 形式是用底线的形式，利用 <code>=</code> （最高阶标题）和 <code>-</code> （第二阶标题），例如：</p><pre><code>This is an H1
+</code></pre><p>注意：</p>
+<ul>
+<li>区块元素──比如 <code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code>、<code>&lt;p&gt;</code> 等标签，必须在前后加上空行与其它内容区隔开，而且这些（元素）的开始与结尾标签，不可以用制表符或空格来缩进。</li>
+<li>Markdown 语法在 HTML 区块标签中将不会被进行处理，而Markdown 语法在 HTML 区段标签间是有效的。</li>
+<li>HTML 的区段（行内）标签如 <code>&lt;span&gt;</code>、<code>&lt;cite&gt;</code>、<code>&lt;del&gt;</code> 则不受限制，可以在 Markdown 的段落、列表或是标题里任意使用。依照个人习惯，甚至可以不用Markdown 格式，而直接采用 HTML 标签来格式化。</li>
+</ul>
+<hr>
+<h4 id="autoescape">特殊字符自动转换</h4>
+
+<p>在 HTML 文件中，有两个字符需要特殊处理： <code>&lt;</code> 和 <code>&amp;</code> 。 <code>&lt;</code> 符号用于起始标签，<code>&amp;</code> 符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是 <code>&amp;lt;</code> 和 <code>&amp;amp;</code>。</p>
+<p><code>&amp;</code> 符号其实很容易让写作网络文件的人感到困扰，如果你要打「AT&amp;T」 ，你必须要写成「<code>AT&amp;amp;T</code>」 ，而且网址中的 <code>&amp;</code> 字符也要转换。如果你要链接到：</p>
+<pre><code>http://images.google.com/images?num=30&amp;q=larry+bird
+</code></pre><p>你必须要把网址写成：</p>
+<pre><code>http://images.google.com/images?num=30&amp;amp;q=larry+bird
+</code></pre><p>才能放到链接标签的 <code>href</code> 属性里。不用说也知道这很容易忽略，这也可能是 HTML 标准检查所检查到的错误中，数量最多的。</p>
+<p>Markdown 可以自动处理这些符号，如果你使用的 <code>&amp;</code> 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 <code>&amp;amp</code>;。<br>所以你如果要在文件中插入一个著作权的符号，你可以这样写：</p>
+<pre><code>&amp;copy;
+</code></pre><p>Markdown 将不会对这段文字做修改，但是如果你这样写：</p>
+<pre><code>AT&amp;T
+</code></pre><p>Markdown 就会将它转为：</p>
+<pre><code>AT&amp;amp;T
+</code></pre><p>类似的状况也会发生在 <code>&lt;</code> 符号上，因为 Markdown 支持 <a href="#html">兼容 HTML</a> ，如果你是使用 <code>&lt;</code> 符号作为 HTML 标签使用，那 Markdown 也不会对它做任何转换，但是如果你是写：</p>
+<pre><code>4 &lt; 5
+</code></pre><p>Markdown 将会把它转换为：</p>
+<pre><code>4 &amp;lt; 5
+</code></pre><p>不过需要注意的是，code 范围内，不论是行内还是区块， <code>&lt;</code> 和 <code>&amp;</code> 两个符号都<strong>一定</strong>会被转换成 HTML 实体，这项特性让你可以很容易地用 Markdown 写 HTML code （和 HTML 相对而言， HTML 语法中，你要把所有的 <code>&lt;</code> 和 <code>&amp;</code> 都转换为 HTML 实体，才能在 HTML 文件里面写出 HTML code。）</p>
+<hr>
+<h3 id="block">区块元素</h3>
+
+<h4 id="p">段落和换行</h4>
+
+<p>一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。</p>
+<p>「由一个或多个连续的文本行组成」这句话其实暗示了 Markdown 允许段落内的强迫换行（插入换行符），这个特性和其他大部分的 text-to-HTML 格式不一样（包括 Movable Type 的「Convert Line Breaks」选项），其它的格式会把每个换行符都转成 <code>&lt;br /&gt;</code> 标签。</p>
+<p>如果你<strong>真的</strong>想要插入 <code>&lt;br /&gt;</code> 标签的话，在行尾加上两个以上的格然后回车。</p>
+<p>是的，这确实需要花比较多功夫来插入 <code>&lt;br /&gt;</code> ，但是「每个换行都转换为 <code>&lt;br /&gt;</code>」的方法在 Markdown 中并不适合， Markdown 中 email 式的 <a href="#blockquote">区块引用</a> 和多段落的 <a href="#list">列表</a> 在使用换行来排版的时候，不但更好用，还更好阅读。</p>
+<hr>
+<h4 id="header">标题</h4>
+
+<p>Markdown 支持两种标题的语法，类 [Setext] [1] 和类 [atx] [2] 形式。</p>
+<p>类 Setext 形式是用底线的形式，利用 <code>=</code> （最高阶标题）和 <code>-</code> （第二阶标题），例如：</p>
+<pre><code>This is an H1
 =============
 
 This is an H2
 -------------
-</code></pre><p>任何数量的 <code>=</code> 和 <code>-</code> 都可以有效果。</p><p>类 Atx 形式则是在行首插入 1 到 6 个 <code>#</code> ，对应到标题 1 到 6 阶，例如：</p><pre><code># This is an H1
+</code></pre><p>任何数量的 <code>=</code> 和 <code>-</code> 都可以有效果。</p>
+<p>类 Atx 形式则是在行首插入 1 到 6 个 <code>#</code> ，对应到标题 1 到 6 阶，例如：</p>
+<pre><code># This is an H1
 
 ## This is an H2
 
 ###### This is an H6
-</code></pre><p>你可以选择性地「闭合」类 atx 样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上 <code>#</code>，而行尾的 <code>#</code> 数量也不用和开头一样（行首的井字数量决定标题的阶数）：</p><pre><code># This is an H1 #
+</code></pre><p>你可以选择性地「闭合」类 atx 样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上 <code>#</code>，而行尾的 <code>#</code> 数量也不用和开头一样（行首的井字数量决定标题的阶数）：</p>
+<pre><code># This is an H1 #
 
 ## This is an H2 ##
 
 ### This is an H3 ######
-</code></pre><hr><h4 id="blockquote">Blockquotes</h4><p>Markdown 标记区块引用是使用类似 email 中用 <code>&gt;</code> 的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 <code>&gt;</code> ：</p><pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+</code></pre><hr>
+<h4 id="blockquote">Blockquotes</h4>
+
+<p>Markdown 标记区块引用是使用类似 email 中用 <code>&gt;</code> 的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 <code>&gt;</code> ：</p>
+<pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 &gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 &gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 &gt;
 &gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 &gt; id sem consectetuer libero luctus adipiscing.
-</code></pre><p>Markdown 也允许你只在整个段落的第一行最前面加上 <code>&gt;</code> ：</p><pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+</code></pre><p>Markdown 也允许你只在整个段落的第一行最前面加上 <code>&gt;</code> ：</p>
+<pre><code>&gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
 &gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 id sem consectetuer libero luctus adipiscing.
-</code></pre><p>区块引用可以有嵌套（例如：引用内的引用），只要根据层数加上不同数量的 <code>&gt;</code> ：</p><pre><code>&gt; This is the first level of quoting.
+</code></pre><p>区块引用可以有嵌套（例如：引用内的引用），只要根据层数加上不同数量的 <code>&gt;</code> ：</p>
+<pre><code>&gt; This is the first level of quoting.
 &gt;
 &gt; &gt; This is nested blockquote.
 &gt;
 &gt; Back to the first level.
-</code></pre><p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：</p><pre><code>&gt; ## This is a header.
+</code></pre><p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：</p>
+<pre><code>&gt; ## This is a header.
 &gt;
 &gt; 1.   This is the first list item.
 &gt; 2.   This is the second list item.
@@ -54,53 +555,75 @@ id sem consectetuer libero luctus adipiscing.
 &gt; Here&apos;s some example code:
 &gt;
 &gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);
-</code></pre><p>任何标准的文本编辑器都能简单地建立 email 样式的引用，例如 BBEdit ，你可以选取文字后然后从选单中选择<em>增加引用阶层</em>。</p><hr><h4 id="list">列表</h4><p>Markdown 支持有序列表和无序列表。</p><p>无序清单使用星号、加号或是减号作为列表标记：</p><pre><code>*   Red
+</code></pre><p>任何标准的文本编辑器都能简单地建立 email 样式的引用，例如 BBEdit ，你可以选取文字后然后从选单中选择<em>增加引用阶层</em>。</p>
+<hr>
+<h4 id="list">列表</h4>
+
+<p>Markdown 支持有序列表和无序列表。</p>
+<p>无序清单使用星号、加号或是减号作为列表标记：</p>
+<pre><code>*   Red
 *   Green
 *   Blue
-</code></pre><p>等同于：</p><pre><code>+   Red
+</code></pre><p>等同于：</p>
+<pre><code>+   Red
 +   Green
 +   Blue
-</code></pre><p>也等同于：</p><pre><code>-   Red
+</code></pre><p>也等同于：</p>
+<pre><code>-   Red
 -   Green
 -   Blue
-</code></pre><p>有序列表则使用数字接着一个英文句点：</p><pre><code>1.  Bird
+</code></pre><p>有序列表则使用数字接着一个英文句点：</p>
+<pre><code>1.  Bird
 2.  McHale
 3.  Parish
-</code></pre><p>很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为：</p><pre><code>&lt;ol&gt;
+</code></pre><p>很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为：</p>
+<pre><code>&lt;ol&gt;
 &lt;li&gt;Bird&lt;/li&gt;
 &lt;li&gt;McHale&lt;/li&gt;
 &lt;li&gt;Parish&lt;/li&gt;
 &lt;/ol&gt;
-</code></pre><p>如果你的列表标记写成：</p><pre><code>1.  Bird
+</code></pre><p>如果你的列表标记写成：</p>
+<pre><code>1.  Bird
 1.  McHale
 1.  Parish
-</code></pre><p>或甚至是：</p><pre><code>3. Bird
+</code></pre><p>或甚至是：</p>
+<pre><code>3. Bird
 1. McHale
 8. Parish
-</code></pre><p>你都会得到完全相同的 HTML 输出。重点在于，你可以让 Markdown 文件的列表数字和输出的结果相同，或是你懒一点，你可以完全不用在意数字的正确性。</p><p>如果你使用懒惰的写法，建议第一个项目最好还是从 1. 开始，因为 Markdown 未来可能会支持有序列表的 start 属性。</p><p>列表项目标记通常是放在最左边，但是其实也可以缩进，<strong>最多 3 个空格</strong>，项目标记后面则一定要接着至少一个空格或制表符。</p><p>要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：</p><pre><code>*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</code></pre><p>你都会得到完全相同的 HTML 输出。重点在于，你可以让 Markdown 文件的列表数字和输出的结果相同，或是你懒一点，你可以完全不用在意数字的正确性。</p>
+<p>如果你使用懒惰的写法，建议第一个项目最好还是从 1. 开始，因为 Markdown 未来可能会支持有序列表的 start 属性。</p>
+<p>列表项目标记通常是放在最左边，但是其实也可以缩进，<strong>最多 3 个空格</strong>，项目标记后面则一定要接着至少一个空格或制表符。</p>
+<p>要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：</p>
+<pre><code>*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
     Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
     viverra nec, fringilla in, laoreet vitae, risus.
 *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
     Suspendisse id sem consectetuer libero luctus adipiscing.
-</code></pre><p>但是如果你很懒，那也行：</p><pre><code>*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+</code></pre><p>但是如果你很懒，那也行：</p>
+<pre><code>*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
 viverra nec, fringilla in, laoreet vitae, risus.
 *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
 Suspendisse id sem consectetuer libero luctus adipiscing.
-</code></pre><p>如果列表项目间用空行分开， 在输出 HTML 时 Markdown 会把项目的内容在输出时用 <code>&lt;p&gt;</code><br>标签包起来，举例来说：</p><pre><code>*   Bird
+</code></pre><p>如果列表项目间用空行分开， 在输出 HTML 时 Markdown 会把项目的内容在输出时用 <code>&lt;p&gt;</code><br>标签包起来，举例来说：</p>
+<pre><code>*   Bird
 *   Magic
-</code></pre><p>会被转换为：</p><pre><code>&lt;ul&gt;
+</code></pre><p>会被转换为：</p>
+<pre><code>&lt;ul&gt;
 &lt;li&gt;Bird&lt;/li&gt;
 &lt;li&gt;Magic&lt;/li&gt;
 &lt;/ul&gt;
-</code></pre><p>但是这个：</p><pre><code>*   Bird
+</code></pre><p>但是这个：</p>
+<pre><code>*   Bird
 
 *   Magic
-</code></pre><p>会被转换为：</p><pre><code>&lt;ul&gt;
+</code></pre><p>会被转换为：</p>
+<pre><code>&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Bird&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Magic&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</code></pre><p>列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符：</p><pre><code>1.  This is a list item with two paragraphs. Lorem ipsum dolor
+</code></pre><p>列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符：</p>
+<pre><code>1.  This is a list item with two paragraphs. Lorem ipsum dolor
     sit amet, consectetuer adipiscing elit. Aliquam hendrerit
     mi posuere lectus.
 
@@ -109,48 +632,69 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
     sit amet velit.
 
 2.  Suspendisse id sem consectetuer libero luctus adipiscing.
-</code></pre><p>如果你每行都有缩进，看起来会看好很多，当然，Markdown 也允许：</p><pre><code>*   This is a list item with two paragraphs.
+</code></pre><p>如果你每行都有缩进，看起来会看好很多，当然，Markdown 也允许：</p>
+<pre><code>*   This is a list item with two paragraphs.
 
     This is the second paragraph in the list item. You&apos;re
 only required to indent the first line. Lorem ipsum dolor
 sit amet, consectetuer adipiscing elit.
 
 *   Another item in the same list.
-</code></pre><p>如果要在列表项目内放进引用，那 <code>&gt;</code> 就需要缩进：</p><pre><code>*   A list item with a blockquote:
+</code></pre><p>如果要在列表项目内放进引用，那 <code>&gt;</code> 就需要缩进：</p>
+<pre><code>*   A list item with a blockquote:
 
     &gt; This is a blockquote
     &gt; inside a list item.
-</code></pre><p>如果要放代码区块的话，该区块就需要缩排<strong>两次</strong>，也就是 8 个空格或是 2 个制表符：</p><pre><code>*   A list item with a code block:
+</code></pre><p>如果要放代码区块的话，该区块就需要缩排<strong>两次</strong>，也就是 8 个空格或是 2 个制表符：</p>
+<pre><code>*   A list item with a code block:
 
         &lt;code goes here&gt;
-</code></pre><p>当然，项目列表很可能会不小心产生，像是下面这样的写法：</p><pre><code>1986. What a great season.
-</code></pre><p>换句话说，也就是在行首出现<strong>数字-句点-空白</strong>，要避免这样的状况，你可以在句点前面加上反斜杠。</p><pre><code>1986\. What a great season.
-</code></pre><hr><h4 id="precode">程序代码区块</h4><p>和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示，Markdown 会用 <code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code> 标签来把代码区块包起来。</p><p>要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入：</p><pre><code>This is a normal paragraph:
+</code></pre><p>当然，项目列表很可能会不小心产生，像是下面这样的写法：</p>
+<pre><code>1986. What a great season.
+</code></pre><p>换句话说，也就是在行首出现<strong>数字-句点-空白</strong>，要避免这样的状况，你可以在句点前面加上反斜杠。</p>
+<pre><code>1986\. What a great season.
+</code></pre><hr>
+<h4 id="precode">程序代码区块</h4>
+
+<p>和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示，Markdown 会用 <code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code> 标签来把代码区块包起来。</p>
+<p>要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入：</p>
+<pre><code>This is a normal paragraph:
 
     This is a code block.
-</code></pre><p>Markdown 会转换成：</p><pre><code>&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
+</code></pre><p>Markdown 会转换成：</p>
+<pre><code>&lt;p&gt;This is a normal paragraph:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;This is a code block.
 &lt;/code&gt;&lt;/pre&gt;
-</code></pre><p>这个每行一阶的缩进（4 个空格或是 1 个制表符），都会被移除，例如：</p><pre><code>Here is an example of AppleScript:
+</code></pre><p>这个每行一阶的缩进（4 个空格或是 1 个制表符），都会被移除，例如：</p>
+<pre><code>Here is an example of AppleScript:
 
     tell application &quot;Foo&quot;
         beep
     end tell
-</code></pre><p>会被转换为：</p><pre><code>&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
+</code></pre><p>会被转换为：</p>
+<pre><code>&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;tell application &quot;Foo&quot;
     beep
 end tell
 &lt;/code&gt;&lt;/pre&gt;
-</code></pre><p>一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</p><p>在代码区块里面， <code>&amp;</code> 、 <code>&lt;</code> 和 <code>&gt;</code> 会自动转成 HTML 实体，这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码，只需要复制贴上，再加上缩进就可以了，剩下的 Markdown 都会帮你处理，例如：</p><pre><code>&lt;div class=&quot;footer&quot;&gt;
+</code></pre><p>一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</p>
+<p>在代码区块里面， <code>&amp;</code> 、 <code>&lt;</code> 和 <code>&gt;</code> 会自动转成 HTML 实体，这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码，只需要复制贴上，再加上缩进就可以了，剩下的 Markdown 都会帮你处理，例如：</p>
+<pre><code>&lt;div class=&quot;footer&quot;&gt;
     &amp;copy; 2004 Foo Corporation
 &lt;/div&gt;
-</code></pre><p>会被转换为：</p><pre><code>&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;footer&quot;&amp;gt;
+</code></pre><p>会被转换为：</p>
+<pre><code>&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;footer&quot;&amp;gt;
     &amp;amp;copy; 2004 Foo Corporation
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-</code></pre><p>代码区块中，一般的 Markdown 语法不会被转换，像是星号便只是星号，这表示你可以很容易地以 Markdown 语法撰写 Markdown 语法相关的文件。</p><hr><h4 id="hr">分隔线</h4><p>你可以在一行中用三个或以上的星号、减号来建立一个分隔线，行内不能有其他东西。你也可以在星号中间插入空格。下面每种写法都可以建立分隔线：</p><pre><code>* * *
+</code></pre><p>代码区块中，一般的 Markdown 语法不会被转换，像是星号便只是星号，这表示你可以很容易地以 Markdown 语法撰写 Markdown 语法相关的文件。</p>
+<hr>
+<h4 id="hr">分隔线</h4>
+
+<p>你可以在一行中用三个或以上的星号、减号来建立一个分隔线，行内不能有其他东西。你也可以在星号中间插入空格。下面每种写法都可以建立分隔线：</p>
+<pre><code>* * *
 
 ***
 
@@ -159,101 +703,206 @@ end tell
 - - -
 
 ---------------------------------------
-</code></pre><hr><h3 id="span">区段元素</h3><h4 id="link">链接</h4><p>Markdown 支持两种形式的链接语法： <strong>行内式</strong>和<strong>参考式</strong>两种形式。</p><p>不管是哪一种，链接的文字都是用 [方括号] 来标记。</p><p>要建立一个<strong>行内式</strong>的链接，只要在方括号后面马上接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：</p><pre><code>This is [an example](http://example.com/ &quot;Title&quot;) inline link.
+</code></pre><hr>
+<h3 id="span">区段元素</h3>
+
+<h4 id="link">链接</h4>
+
+<p>Markdown 支持两种形式的链接语法： <strong>行内式</strong>和<strong>参考式</strong>两种形式。</p>
+<p>不管是哪一种，链接的文字都是用 [方括号] 来标记。</p>
+<p>要建立一个<strong>行内式</strong>的链接，只要在方括号后面马上接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：</p>
+<pre><code>This is [an example](http://example.com/ &quot;Title&quot;) inline link.
 
 [This link](http://example.net/) has no title attribute.
-</code></pre><p>会产生：</p><pre><code>&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;
+</code></pre><p>会产生：</p>
+<pre><code>&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;
 an example&lt;/a&gt; inline link.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no
 title attribute.&lt;/p&gt;
-</code></pre><p>如果你是要链接到同样主机的资源，你可以使用相对路径：</p><pre><code>See my [About](/about/) page for details.
-</code></pre><p><strong>参考式</strong>的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：</p><pre><code>This is [an example][id] reference-style link.
-</code></pre><p>你也可以选择性地在两个方括号中间加上空格：</p><pre><code>This is [an example] [id] reference-style link.
-</code></pre><p>接着，在文件的任意处，你可以把这个标签的链接内容定义出来：</p><pre><code>[id]: http://example.com/  &quot;Optional Title Here&quot;
-</code></pre><p>链接内容定义的形式为：</p><ul><li>方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</li><li>接着一个冒号</li><li>接着一个以上的空格或制表符</li><li>接着链接的网址</li><li>选择性地接着 title 内容，可以用单引号、双引号或是圆括号包着</li></ul><p>下面这三种连结的定义都是相同：</p><pre><code>[foo]: http://example.com/  &quot;Optional Title Here&quot;
+</code></pre><p>如果你是要链接到同样主机的资源，你可以使用相对路径：</p>
+<pre><code>See my [About](/about/) page for details.
+</code></pre><p><strong>参考式</strong>的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：</p>
+<pre><code>This is [an example][id] reference-style link.
+</code></pre><p>你也可以选择性地在两个方括号中间加上空格：</p>
+<pre><code>This is [an example] [id] reference-style link.
+</code></pre><p>接着，在文件的任意处，你可以把这个标签的链接内容定义出来：</p>
+<pre><code>[id]: http://example.com/  &quot;Optional Title Here&quot;
+</code></pre><p>链接内容定义的形式为：</p>
+<ul>
+<li>方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</li>
+<li>接着一个冒号</li>
+<li>接着一个以上的空格或制表符</li>
+<li>接着链接的网址</li>
+<li>选择性地接着 title 内容，可以用单引号、双引号或是圆括号包着</li>
+</ul>
+<p>下面这三种连结的定义都是相同：</p>
+<pre><code>[foo]: http://example.com/  &quot;Optional Title Here&quot;
 [foo]: http://example.com/  &apos;Optional Title Here&apos;
 [foo]: http://example.com/  (Optional Title Here)
-</code></pre><p><strong>请注意：</strong>有一个已知的问题是 Markdown.pl 1.0.1 会忽略单引号包起来的链接 title。</p><p>链接网址也可以用方括号包起来：</p><pre><code>[id]: &lt;http://example.com/&gt;  &quot;Optional Title Here&quot;
-</code></pre><p>你也可以把 title 属性放到下一行，也可以加一些缩进，网址太长的话，这样会比较好看：</p><pre><code>[id]: http://example.com/longish/path/to/resource/here
+</code></pre><p><strong>请注意：</strong>有一个已知的问题是 Markdown.pl 1.0.1 会忽略单引号包起来的链接 title。</p>
+<p>链接网址也可以用方括号包起来：</p>
+<pre><code>[id]: &lt;http://example.com/&gt;  &quot;Optional Title Here&quot;
+</code></pre><p>你也可以把 title 属性放到下一行，也可以加一些缩进，网址太长的话，这样会比较好看：</p>
+<pre><code>[id]: http://example.com/longish/path/to/resource/here
     &quot;Optional Title Here&quot;
-</code></pre><p>网址定义只有在产生链接的时候用到，并不会直接出现在文件之中。</p><p>链接辨识标记可以有字母、数字、空白和标点符号，但是并<strong>不区分</strong>大小写，因此下面两个链接是一样的：</p><pre><code>[link text][a]
+</code></pre><p>网址定义只有在产生链接的时候用到，并不会直接出现在文件之中。</p>
+<p>链接辨识标记可以有字母、数字、空白和标点符号，但是并<strong>不区分</strong>大小写，因此下面两个链接是一样的：</p>
+<pre><code>[link text][a]
 [link text][A]
-</code></pre><p><strong>隐式链接标记</strong>功能让你可以省略指定链接标记，这种情形下，链接标记和链接文字会视为相同，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让 “Google” 链接到 google.com，你可以简化成：</p><pre><code>[Google][]
-</code></pre><p>然后定义链接内容：</p><pre><code>[Google]: http://google.com/
-</code></pre><p>由于链接文字可能包含空白，所以这种简化的标记内也可以包含多个单词：</p><pre><code>Visit [Daring Fireball][] for more information.
-</code></pre><p>然后接着定义链接：</p><pre><code>[Daring Fireball]: http://daringfireball.net/
-</code></pre><p>链接的定义可以放在文件中的任何一个地方，我比较偏好直接放在链接出现段落的后面，你也可以把它放在文件最后面，就像是注解一样。</p><p>下面是一个参考式链接的范例：</p><pre><code>I get 10 times more traffic from [Google] [1] than from
+</code></pre><p><strong>隐式链接标记</strong>功能让你可以省略指定链接标记，这种情形下，链接标记和链接文字会视为相同，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让 “Google” 链接到 google.com，你可以简化成：</p>
+<pre><code>[Google][]
+</code></pre><p>然后定义链接内容：</p>
+<pre><code>[Google]: http://google.com/
+</code></pre><p>由于链接文字可能包含空白，所以这种简化的标记内也可以包含多个单词：</p>
+<pre><code>Visit [Daring Fireball][] for more information.
+</code></pre><p>然后接着定义链接：</p>
+<pre><code>[Daring Fireball]: http://daringfireball.net/
+</code></pre><p>链接的定义可以放在文件中的任何一个地方，我比较偏好直接放在链接出现段落的后面，你也可以把它放在文件最后面，就像是注解一样。</p>
+<p>下面是一个参考式链接的范例：</p>
+<pre><code>I get 10 times more traffic from [Google] [1] than from
 [Yahoo] [2] or [MSN] [3].
 
   [1]: http://google.com/        &quot;Google&quot;
   [2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;
   [3]: http://search.msn.com/    &quot;MSN Search&quot;
-</code></pre><p>如果改成用链接名称的方式写：</p><pre><code>I get 10 times more traffic from [Google][] than from
+</code></pre><p>如果改成用链接名称的方式写：</p>
+<pre><code>I get 10 times more traffic from [Google][] than from
 [Yahoo][] or [MSN][].
 
   [google]: http://google.com/        &quot;Google&quot;
   [yahoo]:  http://search.yahoo.com/  &quot;Yahoo Search&quot;
   [msn]:    http://search.msn.com/    &quot;MSN Search&quot;
-</code></pre><p>上面两种写法都会产生下面的 HTML。</p><pre><code>&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot;
+</code></pre><p>上面两种写法都会产生下面的 HTML。</p>
+<pre><code>&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot;
 title=&quot;Google&quot;&gt;Google&lt;/a&gt; than from
 &lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&gt;Yahoo&lt;/a&gt;
 or &lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
-</code></pre><p>下面是用行内形式写的同样一段内容的 Markdown 文件，提供作为比较之用：</p><pre><code>I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;)
+</code></pre><p>下面是用行内形式写的同样一段内容的 Markdown 文件，提供作为比较之用：</p>
+<pre><code>I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;)
 than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
 [MSN](http://search.msn.com/ &quot;MSN Search&quot;).
-</code></pre><p>参考式的链接其实重点不在于它比较好写，而是它比较好读，比较一下上面的范例，使用参考式的文章本身只有 81 个字符，但是用行内形式的连结却会增加到 176 个字符，如果是用纯 HTML 格式来写，会有 234 个字符，在 HTML 格式中，标签比文字还要多。</p><p>使用 Markdown 的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的信息移到段落文字之外，你就可以增加连结而不让文章的阅读感觉被打断。</p><hr><h4 id="achor">锚点</h4><p>网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。</p><p>注意：</p><ul><li>Markdown Extra 只支持在标题后插入锚点，其它地方无效。</li><li>Leanote 编辑器右侧显示效果区域暂时不支持锚点跳转，所以点来点去发现没有跳转不必惊慌，但是你发布成笔记或博文后是支持跳转的。</li></ul><p>例如：</p><pre><code>## 0. 目录{#index}
+</code></pre><p>参考式的链接其实重点不在于它比较好写，而是它比较好读，比较一下上面的范例，使用参考式的文章本身只有 81 个字符，但是用行内形式的连结却会增加到 176 个字符，如果是用纯 HTML 格式来写，会有 234 个字符，在 HTML 格式中，标签比文字还要多。</p>
+<p>使用 Markdown 的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的信息移到段落文字之外，你就可以增加连结而不让文章的阅读感觉被打断。</p>
+<hr>
+<h4 id="achor">锚点</h4>
+
+<p>网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。</p>
+<p>注意：</p>
+<ul>
+<li>Markdown Extra 只支持在标题后插入锚点，其它地方无效。</li>
+<li>Leanote 编辑器右侧显示效果区域暂时不支持锚点跳转，所以点来点去发现没有跳转不必惊慌，但是你发布成笔记或博文后是支持跳转的。</li>
+</ul>
+<p>例如：</p>
+<pre><code>## 0. 目录{#index}
 
 跳转到[目录](#index)
-</code></pre><hr><h4 id="foot">注脚</h4><p>在需要添加注脚的文字后加上脚注名字[^注脚名字],称为加注。 然后在文本的任意位置(一般在最后)添加脚注，脚注前必须有对应的脚注名字。<br>注意：经测试注脚与注脚之间必须空一行，不然会失效。成功后会发现，即使你没有把注脚写在文末，经Markdown转换后，也会自动归类到文章的最后。</p><pre><code>使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。
+</code></pre><hr>
+<h4 id="foot">注脚</h4>
+
+<p>在需要添加注脚的文字后加上脚注名字[^注脚名字],称为加注。 然后在文本的任意位置(一般在最后)添加脚注，脚注前必须有对应的脚注名字。<br>注意：经测试注脚与注脚之间必须空一行，不然会失效。成功后会发现，即使你没有把注脚写在文末，经Markdown转换后，也会自动归类到文章的最后。</p>
+<pre><code>使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。
 [^1]:Markdown是一种纯文本标记语言
 [^2]:HyperText Markup Language 超文本标记语言
 [^Le]:开源笔记平台，支持Markdown和笔记直接发为博文
-</code></pre><hr><h4 id="em">强调</h4><p>Markdown 使用星号（<code>*</code>）和底线（<code>_</code>）作为标记强调字词的符号，被 <code>*</code> 或 <code>_</code> 包围的字词会被转成用 <code>&lt;em&gt;</code> 标签包围，用两个 <code>*</code> 或 <code>_</code> 包起来的话，则会被转成 <code>&lt;strong&gt;</code>，例如：</p><pre><code>*single asterisks*
+</code></pre><hr>
+<h4 id="em">强调</h4>
+
+<p>Markdown 使用星号（<code>*</code>）和底线（<code>_</code>）作为标记强调字词的符号，被 <code>*</code> 或 <code>_</code> 包围的字词会被转成用 <code>&lt;em&gt;</code> 标签包围，用两个 <code>*</code> 或 <code>_</code> 包起来的话，则会被转成 <code>&lt;strong&gt;</code>，例如：</p>
+<pre><code>*single asterisks*
 
 _single underscores_
 
 **double asterisks**
 
 __double underscores__
-</code></pre><p>会转成：</p><pre><code>&lt;em&gt;single asterisks&lt;/em&gt;
+</code></pre><p>会转成：</p>
+<pre><code>&lt;em&gt;single asterisks&lt;/em&gt;
 
 &lt;em&gt;single underscores&lt;/em&gt;
 
 &lt;strong&gt;double asterisks&lt;/strong&gt;
 
 &lt;strong&gt;double underscores&lt;/strong&gt;
-</code></pre><p>你可以随便用你喜欢的样式，唯一的限制是，你用什么符号开启标签，就要用什么符号结束。</p><p>强调也可以直接插在文字中间：</p><pre><code>un*frigging*believable
-</code></pre><p>但是<strong>如果你的 <code>*</code> 和 <code>_</code> 两边都有空白的话，它们就只会被当成普通的符号</strong>。</p><p>如果要在文字前后直接插入普通的星号或底线，你可以用反斜杠：</p><pre><code>\*this text is surrounded by literal asterisks\*
-</code></pre><hr><h4 id="code">代码</h4><p>如果要标记一小段行内代码，你可以用反引号把它包起来（<code>`</code>），例如：</p><pre><code>Use the `printf()` function.
-</code></pre><p>会产生：</p><pre><code>&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
-</code></pre><p>如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：</p><pre><code>``There is a literal backtick (`) here.``
-</code></pre><p>这段语法会产生：</p><pre><code>&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
-</code></pre><p>代码区段的起始和结束端都可以放入一个空白，起始端后面一个，结束端前面一个，这样你就可以在区段的一开始就插入反引号：</p><pre><code>A single backtick in a code span: `` ` ``
+</code></pre><p>你可以随便用你喜欢的样式，唯一的限制是，你用什么符号开启标签，就要用什么符号结束。</p>
+<p>强调也可以直接插在文字中间：</p>
+<pre><code>un*frigging*believable
+</code></pre><p>但是<strong>如果你的 <code>*</code> 和 <code>_</code> 两边都有空白的话，它们就只会被当成普通的符号</strong>。</p>
+<p>如果要在文字前后直接插入普通的星号或底线，你可以用反斜杠：</p>
+<pre><code>\*this text is surrounded by literal asterisks\*
+</code></pre><hr>
+<h4 id="code">代码</h4>
+
+<p>如果要标记一小段行内代码，你可以用反引号把它包起来（<code>`</code>），例如：</p>
+<pre><code>Use the `printf()` function.
+</code></pre><p>会产生：</p>
+<pre><code>&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+</code></pre><p>如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：</p>
+<pre><code>``There is a literal backtick (`) here.``
+</code></pre><p>这段语法会产生：</p>
+<pre><code>&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
+</code></pre><p>代码区段的起始和结束端都可以放入一个空白，起始端后面一个，结束端前面一个，这样你就可以在区段的一开始就插入反引号：</p>
+<pre><code>A single backtick in a code span: `` ` ``
 
 A backtick-delimited string in a code span: `` `foo` ``
-</code></pre><p>会产生：</p><pre><code>&lt;p&gt;A single backtick in a code span: &lt;code&gt;`&lt;/code&gt;&lt;/p&gt;
+</code></pre><p>会产生：</p>
+<pre><code>&lt;p&gt;A single backtick in a code span: &lt;code&gt;`&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;A backtick-delimited string in a code span: &lt;code&gt;`foo`&lt;/code&gt;&lt;/p&gt;
-</code></pre><p>在代码区段内，<code>&amp;</code> 和方括号都会被转成 HTML 实体，这样会比较容易插入 HTML 原始码，Markdown 会把下面这段：</p><pre><code>Please don&apos;t use any `&lt;blink&gt;` tags.
-</code></pre><p>转为：</p><pre><code>&lt;p&gt;Please don&apos;t use any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
-</code></pre><p>你也可以这样写：</p><pre><code>`&amp;#8212;` is the decimal-encoded equivalent of `&amp;mdash;`.
-</code></pre><p>以产生：</p><pre><code>&lt;p&gt;&lt;code&gt;&amp;amp;#8212;&lt;/code&gt; is the decimal-encoded
+</code></pre><p>在代码区段内，<code>&amp;</code> 和方括号都会被转成 HTML 实体，这样会比较容易插入 HTML 原始码，Markdown 会把下面这段：</p>
+<pre><code>Please don&apos;t use any `&lt;blink&gt;` tags.
+</code></pre><p>转为：</p>
+<pre><code>&lt;p&gt;Please don&apos;t use any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+</code></pre><p>你也可以这样写：</p>
+<pre><code>`&amp;#8212;` is the decimal-encoded equivalent of `&amp;mdash;`.
+</code></pre><p>以产生：</p>
+<pre><code>&lt;p&gt;&lt;code&gt;&amp;amp;#8212;&lt;/code&gt; is the decimal-encoded
 equivalent of &lt;code&gt;&amp;amp;mdash;&lt;/code&gt;.&lt;/p&gt;
-</code></pre><hr><h4 id="img">图片</h4><p>很明显地，要在纯文本应用中设计一个 「自然」的语法来插入图片是有一定难度的。</p><p>Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： <strong>行内式</strong>和<strong>参考式</strong>。</p><p>行内式图片的语法看起来像是：</p><pre><code>![Alt text](/path/to/img.jpg)
+</code></pre><hr>
+<h4 id="img">图片</h4>
+
+<p>很明显地，要在纯文本应用中设计一个 「自然」的语法来插入图片是有一定难度的。</p>
+<p>Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： <strong>行内式</strong>和<strong>参考式</strong>。</p>
+<p>行内式图片的语法看起来像是：</p>
+<pre><code>![Alt text](/path/to/img.jpg)
 
 ![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
-</code></pre><p>详细叙述如下：</p><ul><li>一个惊叹号 <code>!</code></li><li>接着一对方括号，里面放上图片的替代文字</li><li>接着一对普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’ 文字。</li></ul><p>参考式的图片语法则长得像这样：</p><pre><code>![Alt text][id]
-</code></pre><p>「id」是图片参考的名称，图片参考的定义方式则和链接参考一样：</p><pre><code>[id]: url/to/image  &quot;Optional title attribute&quot;
-</code></pre><p>到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 <code>&lt;img&gt;</code> 标签。</p><hr><h3 id="misc">其它</h3><h4 id="autolink">自动链接</h4><p>Markdown 支持比较简短的自动连结形式来处理网址和电子邮件信箱，只要是用方括号包起来， Markdown 就会自动把它转成链接，链接的文字就和链接位置一样，例如：</p><pre><code>&lt;http://example.com/&gt;
-</code></pre><p>Markdown 会转为：</p><pre><code>&lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;
-</code></pre><p>邮址的自动链接也很类似，只是 Markdown 会先做一个编码转换的过程，把文字字符转成 16 进位码的 HTML 实体，这样的格式可以糊弄一些不好的邮址收集机器人，例如：</p><pre><code>&lt;address@example.com&gt;
-</code></pre><p>Markdown 会转成：</p><pre><code>&lt;a href=&quot;&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;
+</code></pre><p>详细叙述如下：</p>
+<ul>
+<li>一个惊叹号 <code>!</code></li>
+<li>接着一对方括号，里面放上图片的替代文字</li>
+<li>接着一对普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’ 文字。</li>
+</ul>
+<p>参考式的图片语法则长得像这样：</p>
+<pre><code>![Alt text][id]
+</code></pre><p>「id」是图片参考的名称，图片参考的定义方式则和链接参考一样：</p>
+<pre><code>[id]: url/to/image  &quot;Optional title attribute&quot;
+</code></pre><p>到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 <code>&lt;img&gt;</code> 标签。</p>
+<hr>
+<h3 id="misc">其它</h3>
+
+<h4 id="autolink">自动链接</h4>
+
+<p>Markdown 支持比较简短的自动连结形式来处理网址和电子邮件信箱，只要是用方括号包起来， Markdown 就会自动把它转成链接，链接的文字就和链接位置一样，例如：</p>
+<pre><code>&lt;http://example.com/&gt;
+</code></pre><p>Markdown 会转为：</p>
+<pre><code>&lt;a href=&quot;http://example.com/&quot;&gt;http://example.com/&lt;/a&gt;
+</code></pre><p>邮址的自动链接也很类似，只是 Markdown 会先做一个编码转换的过程，把文字字符转成 16 进位码的 HTML 实体，这样的格式可以糊弄一些不好的邮址收集机器人，例如：</p>
+<pre><code>&lt;address@example.com&gt;
+</code></pre><p>Markdown 会转成：</p>
+<pre><code>&lt;a href=&quot;&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;
 &amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;
 &amp;#109;&quot;&gt;&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;
 &amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;
-</code></pre><p>在浏览器里面，这段字符串（其实是 <code>&lt;a href=&quot;mailto:address@example.com&quot;&gt;address@example.com&lt;/a&gt;</code>）会变成一个可以点击的「<a href="mailto:address@example.com" target="_blank" rel="noopener">address@example.com</a>」链接。</p><p>（这种作法虽然可以糊弄不少的机器人，但并无法全部挡下来，不过这样也比什么都不做好些。无论如何，公开你的信箱终究会引来广告信件的。）</p><hr><h4 id="backslash">反斜杠</h4><p>Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用 <code>&lt;em&gt;</code> 标签），你可以在星号的前面加上反斜杠：</p><pre><code>\*literal asterisks\*
-</code></pre><p>Markdown 支持在下面这些符号前面加上反斜杠来帮助插入普通的符号：</p><pre><code>\   反斜杠
+</code></pre><p>在浏览器里面，这段字符串（其实是 <code>&lt;a href=&quot;mailto:address@example.com&quot;&gt;address@example.com&lt;/a&gt;</code>）会变成一个可以点击的「<a href="mailto:address@example.com" target="_blank" rel="noopener">address@example.com</a>」链接。</p>
+<p>（这种作法虽然可以糊弄不少的机器人，但并无法全部挡下来，不过这样也比什么都不做好些。无论如何，公开你的信箱终究会引来广告信件的。）</p>
+<hr>
+<h4 id="backslash">反斜杠</h4>
+
+<p>Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用 <code>&lt;em&gt;</code> 标签），你可以在星号的前面加上反斜杠：</p>
+<pre><code>\*literal asterisks\*
+</code></pre><p>Markdown 支持在下面这些符号前面加上反斜杠来帮助插入普通的符号：</p>
+<pre><code>\   反斜杠
 `   反引号
 *   星号
 _   底线
@@ -265,13 +914,22 @@ _   底线
 -   减号
 .   英文句点
 !   惊叹号
-</code></pre><hr><h4 id="equation">公式</h4><p>行内公式（$ 包裹），例如：</p><pre><code>质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
-</code></pre><p>整行公式（$$包裹），例如：</p><pre><code>$$\sum_{i=1}^n a_i=0$$
+</code></pre><hr>
+<h4 id="equation">公式</h4>
+
+<p>行内公式（$ 包裹），例如：</p>
+<pre><code>质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
+</code></pre><p>整行公式（$$包裹），例如：</p>
+<pre><code>$$\sum_{i=1}^n a_i=0$$
 
 $$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
 
 $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
-</code></pre><p>访问<a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a>参考更多使用方法。</p><hr><h4 id="graph">流程图</h4><pre><code>(```)flow
+</code></pre><p>访问<a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a>参考更多使用方法。</p>
+<hr>
+<h4 id="graph">流程图</h4>
+
+<pre><code>(```)flow
 st=&gt;start: Start|past:&gt;http://www.google.com[blank]
 e=&gt;end: End:&gt;http://www.google.com
 op1=&gt;operation: My Operation|past
@@ -287,27 +945,148 @@ cond(no)-&gt;sub1(left)-&gt;op1
 c2(yes)-&gt;io-&gt;e
 c2(no)-&gt;op2-&gt;e
 (```)
-</code></pre><p>显示如下：</p><div id="flowchart-0" class="flow-chart"></div><p>流程图分为两部分<strong>定义参数</strong>和<strong>连接参数</strong></p><pre><code>tag=&gt;type: content:&gt;url         // 形参格式
+</code></pre><p>显示如下：</p>
+<div id="flowchart-0" class="flow-chart"></div>
+
+<p>流程图分为两部分<strong>定义参数</strong>和<strong>连接参数</strong></p>
+<pre><code>tag=&gt;type: content:&gt;url         // 形参格式
 st=&gt;start: 开始:&gt;http://www.baidu.com[blank]  //实参格式
-</code></pre><p><strong>注：<code>st=&gt;start: 开始</code>的<code>:</code>后保持空格</strong></p><table><thead><tr><th style="text-align:center">形参</th><th style="text-align:center">实参</th><th style="text-align:center">含义</th></tr></thead><tbody><tr><td style="text-align:center">tag</td><td style="text-align:center">st</td><td style="text-align:center">标签（可以自定义）</td></tr><tr><td style="text-align:center">=&gt;</td><td style="text-align:center">=&gt;</td><td style="text-align:center">赋值</td></tr><tr><td style="text-align:center">type</td><td style="text-align:center">start</td><td style="text-align:center">类型 (6种类型)</td></tr><tr><td style="text-align:center">content</td><td style="text-align:center">开始</td><td style="text-align:center">描述内容 (可以自定义)</td></tr><tr><td style="text-align:center">:&gt;url</td><td style="text-align:center"><a href="http://www.baidu.com[blank]" target="_blank" rel="noopener">http://www.baidu.com[blank]</a></td><td style="text-align:center">链接与跳转方式 兼容性很差</td></tr></tbody></table><p>单元类型：</p><table><thead><tr><th style="text-align:center">6种类型</th><th style="text-align:center">含义</th></tr></thead><tbody><tr><td style="text-align:center">start</td><td style="text-align:center">启动</td></tr><tr><td style="text-align:center">end</td><td style="text-align:center">结束</td></tr><tr><td style="text-align:center">operation</td><td style="text-align:center">程序</td></tr><tr><td style="text-align:center">subroutine</td><td style="text-align:center">子程序</td></tr><tr><td style="text-align:center">condition</td><td style="text-align:center">条件</td></tr><tr><td style="text-align:center">inputoutput</td><td style="text-align:center">输出</td></tr></tbody></table><p>连接示例：</p><pre><code>st-&gt;c1(yes,right)-&gt;c2(yes,right)-&gt;c3(yes,right)-&gt;io-&gt;e
+</code></pre><p><strong>注：<code>st=&gt;start: 开始</code>的<code>:</code>后保持空格</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">形参</th>
+<th style="text-align:center">实参</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">tag</td>
+<td style="text-align:center">st</td>
+<td style="text-align:center">标签（可以自定义）</td>
+</tr>
+<tr>
+<td style="text-align:center">=&gt;</td>
+<td style="text-align:center">=&gt;</td>
+<td style="text-align:center">赋值</td>
+</tr>
+<tr>
+<td style="text-align:center">type</td>
+<td style="text-align:center">start</td>
+<td style="text-align:center">类型 (6种类型)</td>
+</tr>
+<tr>
+<td style="text-align:center">content</td>
+<td style="text-align:center">开始</td>
+<td style="text-align:center">描述内容 (可以自定义)</td>
+</tr>
+<tr>
+<td style="text-align:center">:&gt;url</td>
+<td style="text-align:center"><a href="http://www.baidu.com[blank]" target="_blank" rel="noopener">http://www.baidu.com[blank]</a></td>
+<td style="text-align:center">链接与跳转方式 兼容性很差</td>
+</tr>
+</tbody>
+</table>
+<p>单元类型：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">6种类型</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">start</td>
+<td style="text-align:center">启动</td>
+</tr>
+<tr>
+<td style="text-align:center">end</td>
+<td style="text-align:center">结束</td>
+</tr>
+<tr>
+<td style="text-align:center">operation</td>
+<td style="text-align:center">程序</td>
+</tr>
+<tr>
+<td style="text-align:center">subroutine</td>
+<td style="text-align:center">子程序</td>
+</tr>
+<tr>
+<td style="text-align:center">condition</td>
+<td style="text-align:center">条件</td>
+</tr>
+<tr>
+<td style="text-align:center">inputoutput</td>
+<td style="text-align:center">输出</td>
+</tr>
+</tbody>
+</table>
+<p>连接示例：</p>
+<pre><code>st-&gt;c1(yes,right)-&gt;c2(yes,right)-&gt;c3(yes,right)-&gt;io-&gt;e
 开始-&gt;判断条件1为no-&gt;判断条件2为no-&gt;判断条件3为no-&gt;输出-&gt;结束
-</code></pre><table><thead><tr><th style="text-align:center">形参</th><th style="text-align:center">实参</th><th style="text-align:center">含义</th></tr></thead><tbody><tr><td style="text-align:center">-&gt;</td><td style="text-align:center">-&gt;</td><td style="text-align:center">连接</td></tr><tr><td style="text-align:center">condition</td><td style="text-align:center">c1</td><td style="text-align:center">条件</td></tr><tr><td style="text-align:center">(布尔值,方向)</td><td style="text-align:center">(yes,right)</td><td style="text-align:center">如果满足向右连接，4种方向：right ，left，up ，down 默认为：down</td></tr></tbody></table><p><code>注：operation (程序); subroutine (子程序) ;condition (条件)，都可以在括号里加入连接方向</code></p><pre><code>operation(right)
+</code></pre><table>
+<thead>
+<tr>
+<th style="text-align:center">形参</th>
+<th style="text-align:center">实参</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-&gt;</td>
+<td style="text-align:center">-&gt;</td>
+<td style="text-align:center">连接</td>
+</tr>
+<tr>
+<td style="text-align:center">condition</td>
+<td style="text-align:center">c1</td>
+<td style="text-align:center">条件</td>
+</tr>
+<tr>
+<td style="text-align:center">(布尔值,方向)</td>
+<td style="text-align:center">(yes,right)</td>
+<td style="text-align:center">如果满足向右连接，4种方向：right ，left，up ，down 默认为：down</td>
+</tr>
+</tbody>
+</table>
+<p><code>注：operation (程序); subroutine (子程序) ;condition (条件)，都可以在括号里加入连接方向</code></p>
+<pre><code>operation(right)
 subroutine(left)
 condition(yes,right)    // 只有条件 才能加布尔值
-</code></pre><p>了解更多使用法，访问<a href="http://flowchart.js.org/" target="_blank" rel="noopener">流程图语法参考</a></p><hr><h4 id="form">表格</h4><p>基本语法：</p><ul><li>第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。</li><li>列于列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。</li><li>第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。</li></ul><p>简单方式：</p><pre><code>学号|姓名|分数
+</code></pre><p>了解更多使用法，访问<a href="http://flowchart.js.org/" target="_blank" rel="noopener">流程图语法参考</a></p>
+<hr>
+<h4 id="form">表格</h4>
+
+<p>基本语法：</p>
+<ul>
+<li>第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。</li>
+<li>列于列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。</li>
+<li>第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。</li>
+</ul>
+<p>简单方式：</p>
+<pre><code>学号|姓名|分数
 -|-|-
 小明|男|75
 小红|女|79
 小陆|男|92
-</code></pre><p>原生方式：</p><pre><code>|学号|姓名|分数|
+</code></pre><p>原生方式：</p>
+<pre><code>|学号|姓名|分数|
 |-|-|-|
 |小明|男|75|
 |小红|女|79|
 |小陆|男|92|
-</code></pre><p>对齐方式：</p><pre><code>第一列 | 第二列 | 第三列
+</code></pre><p>对齐方式：</p>
+<pre><code>第一列 | 第二列 | 第三列
 -------: | :------: | :-------
 右对齐 | 居中 | 左对齐
-</code></pre><hr><h3 id="relate">参考内容</h3><p>1、<a href="https://github.com/othree/markdown-syntax-zhtw" target="_blank" rel="noopener">https://github.com/othree/markdown-syntax-zhtw</a><br>2、<a href="https://blog.csdn.net/witnessai1/article/details/52551362" target="_blank" rel="noopener">https://blog.csdn.net/witnessai1/article/details/52551362</a></p><p><strong>*</strong><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display:none">st=>start: Start|past:>http://www.google.com[blank]
+</code></pre><hr>
+<h3 id="relate">参考内容</h3>
+
+<p>1、<a href="https://github.com/othree/markdown-syntax-zhtw" target="_blank" rel="noopener">https://github.com/othree/markdown-syntax-zhtw</a><br>2、<a href="https://blog.csdn.net/witnessai1/article/details/52551362" target="_blank" rel="noopener">https://blog.csdn.net/witnessai1/article/details/52551362</a></p>
+<p><strong>*</strong><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start|past:>http://www.google.com[blank]
 e=>end: End:>http://www.google.com
 op1=>operation: My Operation|past
 op2=>operation: Stuff|current
@@ -321,7 +1100,467 @@ st->op1(right)->cond
 cond(yes, right)->c2
 cond(no)->sub1(left)->op1
 c2(yes)->io->e
-c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display:none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>var code=document.getElementById("flowchart-0-code").value,options=JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value)),diagram=flowchart.parse(code);diagram.drawSVG("flowchart-0",options)</script></p></div><br><div class="copyright"><p> <span><b>本文地址：</b><a href="/2018/05/01/mkdown/" title="Markdown语法">blog.gzong.top/2018/05/01/mkdown/</a><br><b>转载请注明出处，谢谢！</b></span></p></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2018/04/30/hexo-config/" rel="next" title="Hexo搭建个性化blog"><i class="fa fa-chevron-left"></i> Hexo搭建个性化blog</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/2018/05/02/pythonblock/" rel="prev" title="Python代码模块">Python代码模块<i class="fa fa-chevron-right"></i></a></div></div></div></article><div class="post-spread"><script>with(document)(getElementsByTagName("head")[0]||body).appendChild(createElement("script")).src="//bdimg.share.baidu.com/static/api/js/share.js?cdnversion="+~(-new Date/36e5)</script></div></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div id="sidebar-dimmer"></div><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> 文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> 站点概览</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/images/pic_person.jpg" alt="Gaozong"><p class="site-author-name" itemprop="name">Gaozong</p><p class="site-description motion-element" itemprop="description"></p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">5</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"> <a href="/categories/index.html"><span class="site-state-item-count">2</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">8</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/zong209" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> GitHub</a></span><span class="links-of-author-item"><a href="mailto:zong209@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i> E-Mail</a></span><span class="links-of-author-item"><a href="https://plus.google.com/zong209" target="_blank" title="Google"><i class="fa fa-fw fa-google"></i> Google</a></span></div></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#overview"><span class="nav-number">1.</span> <span class="nav-text">Markdown特点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#html"><span class="nav-number">1.1.</span> <span class="nav-text">兼容 HTML</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#autoescape"><span class="nav-number">1.2.</span> <span class="nav-text">特殊字符自动转换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#block"><span class="nav-number">2.</span> <span class="nav-text">区块元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#p"><span class="nav-number">2.1.</span> <span class="nav-text">段落和换行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#header"><span class="nav-number">2.2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#blockquote"><span class="nav-number">2.3.</span> <span class="nav-text">Blockquotes</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#list"><span class="nav-number">2.4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#precode"><span class="nav-number">2.5.</span> <span class="nav-text">程序代码区块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hr"><span class="nav-number">2.6.</span> <span class="nav-text">分隔线</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#span"><span class="nav-number">3.</span> <span class="nav-text">区段元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#link"><span class="nav-number">3.1.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#achor"><span class="nav-number">3.2.</span> <span class="nav-text">锚点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#foot"><span class="nav-number">3.3.</span> <span class="nav-text">注脚</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#em"><span class="nav-number">3.4.</span> <span class="nav-text">强调</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#code"><span class="nav-number">3.5.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#img"><span class="nav-number">3.6.</span> <span class="nav-text">图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#misc"><span class="nav-number">4.</span> <span class="nav-text">其它</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#autolink"><span class="nav-number">4.1.</span> <span class="nav-text">自动链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#backslash"><span class="nav-number">4.2.</span> <span class="nav-text">反斜杠</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#equation"><span class="nav-number">4.3.</span> <span class="nav-text">公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#graph"><span class="nav-number">4.4.</span> <span class="nav-text">流程图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#form"><span class="nav-number">4.5.</span> <span class="nav-text">表格</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#relate"><span class="nav-number">5.</span> <span class="nav-text">参考内容</span></a></li></ol></div></div></section><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span id="scrollpercent"><span>0</span>%</span></div></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span> <span class="author" itemprop="copyrightHolder">Gaozong</span> <span><a href="http://www.miitbeian.gov.cn/" target="_blank">鄂ICP备17000446号</a></span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-area-chart"></i></span> <span class="post-meta-item-text">Site words total count&#58;</span> <span title="Site words total count">19.1k</span></div><div><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="busuanzi-count"><script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span><span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div id="needsharebutton-float"><span class="btn"><i class="fa fa-share-alt" aria-hidden="true"></i></span></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><script type="text/javascript">
+c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
+
+      
+    </div>
+    
+    
+    
+    </br>
+    
+      <div class="copyright">
+      <p><span>
+      <b>本文地址：</b><a href="/2018/05/01/mkdown/" title="Markdown语法">blog.gzong.top/2018/05/01/mkdown/</a><br /><b>转载请注明出处，谢谢！</b>
+      </span></p>
+      </div>
+    
+
+    
+
+    
+
+    
+
+
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/30/hexo-config/" rel="next" title="Hexo搭建个性化blog">
+                <i class="fa fa-chevron-left"></i> Hexo搭建个性化blog
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/02/pythonblock/" rel="prev" title="Python代码模块">
+                Python代码模块 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/pic_person.jpg"
+                alt="Gaozong" />
+            
+              <p class="site-author-name" itemprop="name">Gaozong</p>
+              <p class="site-description motion-element" itemprop="description">“扫地只不过是我的表面工作，我真正的身份是一位研究僧”</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/zong209" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:zong209@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/zong209" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#overview"><span class="nav-number">1.</span> <span class="nav-text">Markdown特点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#html"><span class="nav-number">1.1.</span> <span class="nav-text">兼容 HTML</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#autoescape"><span class="nav-number">1.2.</span> <span class="nav-text">特殊字符自动转换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#block"><span class="nav-number">2.</span> <span class="nav-text">区块元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#p"><span class="nav-number">2.1.</span> <span class="nav-text">段落和换行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#header"><span class="nav-number">2.2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#blockquote"><span class="nav-number">2.3.</span> <span class="nav-text">Blockquotes</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#list"><span class="nav-number">2.4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#precode"><span class="nav-number">2.5.</span> <span class="nav-text">程序代码区块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hr"><span class="nav-number">2.6.</span> <span class="nav-text">分隔线</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#span"><span class="nav-number">3.</span> <span class="nav-text">区段元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#link"><span class="nav-number">3.1.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#achor"><span class="nav-number">3.2.</span> <span class="nav-text">锚点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#foot"><span class="nav-number">3.3.</span> <span class="nav-text">注脚</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#em"><span class="nav-number">3.4.</span> <span class="nav-text">强调</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#code"><span class="nav-number">3.5.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#img"><span class="nav-number">3.6.</span> <span class="nav-text">图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#misc"><span class="nav-number">4.</span> <span class="nav-text">其它</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#autolink"><span class="nav-number">4.1.</span> <span class="nav-text">自动链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#backslash"><span class="nav-number">4.2.</span> <span class="nav-text">反斜杠</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#equation"><span class="nav-number">4.3.</span> <span class="nav-text">公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#graph"><span class="nav-number">4.4.</span> <span class="nav-text">流程图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#form"><span class="nav-number">4.5.</span> <span class="nav-text">表格</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#relate"><span class="nav-number">5.</span> <span class="nav-text">参考内容</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
+  <!--<span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  -->
+  <span class="author" itemprop="copyrightHolder">Gaozong</span>
+  <span><a href='http://www.miitbeian.gov.cn/' target="_blank">鄂ICP备17000446号</a></span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">19.1k</span>
+  
+</div>
+
+<div>
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+</div>
+
+<!--
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+-->
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -636,4 +1875,57 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display:none"
         onPopupClose();
       }
     });
-  </script><link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css"><script src="/lib/needsharebutton/needsharebutton.js"></script><script>flOptions={iconStyle:"box",boxForm:"horizontal",position:"middleRight",networks:"Weibo,Wechat,Douban,QQZone,Twitter,Facebook"},new needShareButton("#needsharebutton-float",flOptions)</script><script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/particle.js" count="50" zindex="-2" opacity="1" color="0,104,183"></script></body></html>
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+  
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
+
+  
+
+  <script type="text/javascript" src="/js/src/particle.js" count="50" zindex="-2" opacity="1" color="0,104,183"></script>
+</body>
+</html>

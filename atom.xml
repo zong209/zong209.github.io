@@ -41,9 +41,9 @@
       <category term="codeblock" scheme="blog.gzong.top/categories/codeblock/"/>
     
     
-      <category term="Python" scheme="blog.gzong.top/tags/Python/"/>
-    
       <category term="MachineVision" scheme="blog.gzong.top/tags/MachineVision/"/>
+    
+      <category term="Python" scheme="blog.gzong.top/tags/Python/"/>
     
   </entry>
   
@@ -134,7 +134,7 @@ return
     <link href="blog.gzong.top/2018/04/30/hexo-config/"/>
     <id>blog.gzong.top/2018/04/30/hexo-config/</id>
     <published>2018-04-30T14:04:07.000Z</published>
-    <updated>2018-05-04T13:21:31.000Z</updated>
+    <updated>2018-05-04T13:23:13.000Z</updated>
     
     <summary type="html">
     
