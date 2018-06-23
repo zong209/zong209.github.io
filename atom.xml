@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.gzong.top/"/>
-  <updated>2018-05-04T12:59:49.000Z</updated>
+  <updated>2018-06-23T05:57:17.000Z</updated>
   <id>blog.gzong.top/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>reg</title>
+    <link href="blog.gzong.top/2018/06/23/reg/"/>
+    <id>blog.gzong.top/2018/06/23/reg/</id>
+    <published>2018-06-23T05:55:34.000Z</published>
+    <updated>2018-06-23T05:57:17.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3&gt; 正则表达式&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;/正则表达式主体/修饰符(可选)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;转义字符：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;\s : 空格
+\S : 非空格
+\d : 数字
+\D : 非数字
+\w : 字符 ( 字母 ，数字，下划线_
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="blog.gzong.top/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="正则表达式" scheme="blog.gzong.top/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>电子元器件质量检测代码整理</title>
     <link href="blog.gzong.top/2018/05/03/mvcode/"/>
     <id>blog.gzong.top/2018/05/03/mvcode/</id>
     <published>2018-05-03T07:18:29.000Z</published>
-    <updated>2018-05-04T12:59:49.000Z</updated>
+    <updated>2018-05-07T11:06:38.000Z</updated>
     
     <summary type="html">
     
@@ -41,9 +75,9 @@
       <category term="codeblock" scheme="blog.gzong.top/categories/codeblock/"/>
     
     
-      <category term="MachineVision" scheme="blog.gzong.top/tags/MachineVision/"/>
-    
       <category term="Python" scheme="blog.gzong.top/tags/Python/"/>
+    
+      <category term="MachineVision" scheme="blog.gzong.top/tags/MachineVision/"/>
     
   </entry>
   
@@ -52,7 +86,7 @@
     <link href="blog.gzong.top/2018/05/02/jsblock/"/>
     <id>blog.gzong.top/2018/05/02/jsblock/</id>
     <published>2018-05-02T07:30:03.000Z</published>
-    <updated>2018-05-04T12:59:49.000Z</updated>
+    <updated>2018-05-07T11:06:38.000Z</updated>
     
     <summary type="html">
     
@@ -86,7 +120,7 @@ return
     <link href="blog.gzong.top/2018/05/02/pythonblock/"/>
     <id>blog.gzong.top/2018/05/02/pythonblock/</id>
     <published>2018-05-02T07:30:03.000Z</published>
-    <updated>2018-05-04T13:00:22.000Z</updated>
+    <updated>2018-05-07T11:06:38.000Z</updated>
     
     <summary type="html">
     
@@ -106,7 +140,7 @@ return
     <link href="blog.gzong.top/2018/05/01/mkdown/"/>
     <id>blog.gzong.top/2018/05/01/mkdown/</id>
     <published>2018-05-01T08:38:16.000Z</published>
-    <updated>2018-05-04T12:59:49.000Z</updated>
+    <updated>2018-05-07T11:06:38.000Z</updated>
     
     <summary type="html">
     
@@ -134,7 +168,7 @@ return
     <link href="blog.gzong.top/2018/04/30/hexo-config/"/>
     <id>blog.gzong.top/2018/04/30/hexo-config/</id>
     <published>2018-04-30T14:04:07.000Z</published>
-    <updated>2018-05-04T13:23:13.000Z</updated>
+    <updated>2018-05-07T11:06:38.000Z</updated>
     
     <summary type="html">
     
