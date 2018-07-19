@@ -99,7 +99,7 @@
 <meta property="og:site_name" content="GaoZong&#39;s Notes">
 <meta property="og:description" content="常用的JavaScript功能模块。 去除字符串中空格  1、去掉字符串前后所有空格 function Trim(str) { return str.replace(/(^\s*)|(\s*$)/g, &amp;quot;&amp;quot;); } 2、去掉字符串中所有空格(is_global=&amp;quot;g&amp;quot;) function Trim(str, is_global) { var result;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-07T11:06:38.000Z">
+<meta property="og:updated_time" content="2018-06-28T13:59:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS代码模块">
 <meta name="twitter:description" content="常用的JavaScript功能模块。 去除字符串中空格  1、去掉字符串前后所有空格 function Trim(str) { return str.replace(/(^\s*)|(\s*$)/g, &amp;quot;&amp;quot;); } 2、去掉字符串中所有空格(is_global=&amp;quot;g&amp;quot;) function Trim(str, is_global) { var result;">
@@ -400,7 +400,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  73
+                  210
                 </span>
               
 
@@ -464,6 +464,29 @@ if (is_global.toLowerCase() == &quot;g&quot;) {
 }
 return result;
 }
+</code></pre><p>3.日期格式化</p>
+<pre><code>Date.prototype.format = function (formatStr) {
+var str = formatStr;
+var Week = [&apos;日&apos;, &apos;一&apos;, &apos;二&apos;, &apos;三&apos;, &apos;四&apos;, &apos;五&apos;, &apos;六&apos;];
+str = str.replace(/yyyy|YYYY/, this.getFullYear());
+str = str.replace(/MM/, (this.getMonth() + 1) &gt; 9 ? (this.getMonth() + 1).toString() : &apos;0&apos; + (this.getMonth() + 1));
+str = str.replace(/dd|DD/, this.getDate() &gt; 9 ? this.getDate().toString() : &apos;0&apos; + this.getDate());
+str = str.replace(/hh|HH/, this.getHours() &gt; 9 ? this.getHours().toString() : &apos;0&apos; + this.getHours());
+str = str.replace(/mm/, this.getMinutes() &gt; 9 ? this.getMinutes().toString() : &apos;0&apos; + this.getMinutes());
+str = str.replace(/ss|SS/, this.getSeconds() &gt; 9 ? this.getSeconds().toString() : &apos;0&apos; + this.getSeconds());
+return str;
+} 
+</code></pre><p>4.判断图片是否存在</p>
+<pre><code>function isHasImg(pathImg){
+    var ImgObj=new Image();
+    ImgObj.src= pathImg;
+    if(ImgObj.fileSize &gt; 0 || (ImgObj.width &gt; 0 &amp;&amp; ImgObj.height &gt; 0))
+    {
+    return true;
+    } else {
+    return false;
+    }
+}       
 </code></pre>
       
     </div>
@@ -722,7 +745,7 @@ return result;
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">21.9k</span>
+    <span title="Site words total count">22.1k</span>
   
 </div>
 
